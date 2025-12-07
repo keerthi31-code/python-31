@@ -42,3 +42,5 @@ complex
 #print(float(a))
 b=78.5
 print(int(b))
+'''when ever there is a data lose -- its Explicit type conversion
+no data lose --implicit type coversion'''
