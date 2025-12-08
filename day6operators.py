@@ -1,4 +1,4 @@
-'''x=int(input("enter the value :"))
+x=int(input("enter the value :"))
 y=int(input("enter the value :"))
 #arithmetic opeartors
 sum = x+y
@@ -61,7 +61,7 @@ print(y<<3)
 z = [1,2,3,4]
 print(0 in z)
 print(2 in z)
-'''
+
 
 #identity operator
 a=int(input("enter a value:"))
