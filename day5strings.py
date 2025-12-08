@@ -53,7 +53,9 @@ a="  learning python  "
 print(a)
 print(len(a))
 print(a.strip())
+
 print(a.rstrip())
 print(len(a))
+
 print(a.lstrip())
 print(len(a))
