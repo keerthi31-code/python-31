@@ -1,4 +1,4 @@
-x=int(input("enter the value :"))
+'''x=int(input("enter the value :"))
 y=int(input("enter the value :"))
 #arithmetic opeartors
 sum = x+y
@@ -67,4 +67,10 @@ print(2 in z)
 a=int(input("enter a value:"))
 b=int(input("enter b value :"))
 print(a is b)
+'''
+
+a=int(input("enter the value:"))
+op=(input("enter the operation:"[ +, -, *,/,%,//,**,//]))
+b=int(input("enter the value:"))
+
 
