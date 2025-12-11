@@ -1,8 +1,9 @@
-'''if True:
+if True:
     print("great")
     if False:
         print("hello")
-print("bye")    
+print("bye")   
+
 
 x = int(input("enter the number:"))
 r =x % 2
@@ -10,6 +11,7 @@ if r==0:
     print("even")
 if (r==1):    
     print("odd")
+    
     
 
 x=int(input("enter the value:"))
@@ -32,7 +34,7 @@ if r==0:
         print("not so great")
 else:
     print("odd")
-    '''
+
 
 
 x=2
