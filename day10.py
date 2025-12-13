@@ -12,7 +12,7 @@ if marks >=40:
   print("pass")
 if marks >=75:
  print("distinction")
- '''
+ 
 
 num=int(input("enter the number :"))
 if num%2==0:
@@ -21,3 +21,31 @@ if num%2!=0:
    print("positive odd")
 else:
  print("not positive")
+
+
+age = int(input("enter your age:"))
+if(age>18):
+ print("Adult")
+elif (age>=60):
+  print("Senior")
+else:
+ print("Minor")
+ 
+
+x=int(input("enter the numbr:"))
+if(x==10):
+    print("ten")
+elif(x>5):
+    print("greater than five")
+elif(x>8):
+    print("greater than eight")
+else:
+    print("small")
+
+    '''
+
+password=input("enter the password:")
+if password:
+    print("valid")
+else:
+    print("Invalid")
