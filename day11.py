@@ -13,7 +13,7 @@ else:
  print("less than -10")
 if(number>0):
   print("non negative")
-'''
+
 
 A=int(input("enter the value:"))
 B=int(input("enter the value:"))
@@ -23,3 +23,13 @@ if(A>B) and (A>C):
 else:
   if(B>C):
     print("B is greatest")
+'''
+
+marks=int(input("enter the marks:"))
+if marks>=40:
+    if marks>=75:
+        print("distinction")
+    else:
+        print("pass")
+else:
+    print("fail")
