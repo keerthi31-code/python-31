@@ -69,8 +69,6 @@ b=int(input("enter b value :"))
 print(a is b)
 '''
 
-a=int(input("enter the value:"))
-op=(input("enter the operation:"[ +, -, *,/,%,//,**,//]))
-b=int(input("enter the value:"))
+
 
 
