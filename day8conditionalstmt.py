@@ -1,6 +1,6 @@
 if True:
-    print("great")
-    if False:
+ print("great")
+ if False:
         print("hello")
 print("bye")   
 
