@@ -111,3 +111,4 @@ print(math.sqrt(b))
 
 c=-25
 print(math.sqrt(c))
+#sqrt function doesn't work on negative numbers and complex numbers.
