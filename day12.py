@@ -11,6 +11,7 @@ max()
 min()
 pow()
 sqrt()
+'''
 
 #absolute method when ever there is negative value by using abs() method will convert it to positive value
 num=-5
@@ -99,7 +100,7 @@ print(math.pow(pqr[0],pqr[1]))
 stu=(2.22,12)
 print(math.pow(stu[0],stu[1]))
 #expcept complex numbers all numbers will execute
-'''
+
 
 #sqrt function returns the square root of a number
 import math
