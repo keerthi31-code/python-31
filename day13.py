@@ -1,4 +1,4 @@
-'''
+
 a=int(input("enter the value :"))
 print(abs(a))
 
@@ -29,7 +29,7 @@ print(math.ceil(x))
 
 a=input("enter the value:")
 print(float(a))
-'''
+
 import math
 e=-4.6
 print(math.ceil(e))
