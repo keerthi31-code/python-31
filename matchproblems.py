@@ -6,7 +6,7 @@ match day:
         print("tuesday")
     case 3 if day == 3:
         print("wednesday")
-'''
+
 ##2
 status = str(input("enter the status :"))
 match status.strip():
@@ -16,4 +16,20 @@ match status.strip():
    print("failed")
   case _:
    print("unknown status")
+
+grade = str(input("enter the grade :"))
+match grade:
+ case "A"|"B":
+  print("Good performance")
+ case"C":
+  print("Average performance")
+ case _:
+  print("Invalid grade")
+'''
+choice = int(input("enter the value :"))
+match choice:
+  case 1:
+   print("Start")
+  case 2:
+   print("Stop")
     
