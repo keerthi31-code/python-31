@@ -1,5 +1,4 @@
 #match 
-'''
 day = 4
 match day:
   case 1:
@@ -18,8 +17,8 @@ match day:
     print("Sunday")
     
 
-    #default value
 
+    #default value
 day = 4
 match day:
   case 6:
@@ -30,6 +29,8 @@ match day:
 
   case _:
    print("Looking forward to next week")
+
+
   
 # combine values in it we pipe | character for combining the values under a case
 day = 3
@@ -38,7 +39,9 @@ match day:
         print("these are week days")
     case 6|7:
         print("i love weekends")
-        '''
+
+
+        
 # if stmt as guard
 month = 3
 day = 7
@@ -52,7 +55,7 @@ match day:
  case _:
   print("not match")
   
-  #
+  
 
 
       
