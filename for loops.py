@@ -5,6 +5,10 @@ y='NAVIN'
 for i in y:
     print(i)
 
+for i in[21,'keerthi']:
+    print(i)
+for i in range(10):
+    print(i)
 for i in range(11,20,1):
     print(i)
 
