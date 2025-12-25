@@ -42,10 +42,20 @@ elif(x>8):
 else:
     print("small")
 
-    '''
+    
 
 password=input("enter the password:")
 if password:
     print("valid")
 else:
     print("Invalid")
+
+'''
+
+num =int(input()) 
+if num == 0:
+    print("zero")
+elif num >0:
+    print("positive")
+else:
+    print("negative")
