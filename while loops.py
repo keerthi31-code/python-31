@@ -35,19 +35,30 @@
 #     i+=1
 #     print(sum)
 
- #5
-x=["apple","banana","guava"]  
-for i in x:
-    print(i)
-y=[19,45,87] 
-for i in y:
-    print(i)
+#  #5
+# x=["apple","banana","guava"]  
+# for i in x:
+#     print(i)
+# y=[19,45,87] 
+# for i in y:
+#     print(i)
+
 #6
-x=1234
-x%10==0
-while 
-print(x)
+#num = int(input("enter the number :"))
+# #convert negative to positive
+# if num<0:
+#     num = -num
+# count = 0
+# if num==0:
+#     count=1
+# else:
+#     while num>0:
+#         num=num//10 #removes last digit
+#         count += 1
+# print(count)        
 
-
+#7
+for i in range(10,0):
+    print(i)
 
 
