@@ -58,7 +58,15 @@
 # print(count)        
 
 #7
-for i in range(10,0):
-    print(i)
+# for i in range(10,0,-1):
+#     print(i)
 
+#8
+# num=int(input("enter the positive number :"))
+# while num<=0:
+#     num = int(input("not positive enter again :"))
+#     print("you entered :",num)
 
+#9
+for i in range(0,10):
+    
