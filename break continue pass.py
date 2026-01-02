@@ -21,10 +21,19 @@
 
 
 #pass
-for i in range(1,101):
-    if(i%2!=0):
-      pass
+# for i in range(1,101):
+#     if(i%2!=0):
+#       pass
 
-    else:
-       print(i)
-print("bye")    
+#     else:
+#        print(i)
+# print("bye")    
+
+
+#1
+while True:
+ x=int(input("enter the value: "))
+ if x<0:
+  print("you entered the positive value")
+  break
+print("stops! you entered negative value")
