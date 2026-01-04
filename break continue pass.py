@@ -31,9 +31,15 @@
 
 
 #1
-while True:
- x=int(input("enter the value: "))
- if x<0:
-  print("you entered the positive value")
-  break
-print("stops! you entered negative value")
+# while True:
+#  x=int(input("enter the value: "))
+#  if x<0:
+#   print("you entered the positive value")
+#   break
+# print("stops! you entered negative value")
+
+#2
+for i in range (1,101):
+  if i%7==0 and i%11==0:
+   break
+  print(i) 
