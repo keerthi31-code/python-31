@@ -39,7 +39,27 @@
 # print("stops! you entered negative value")
 
 #2
-for i in range (1,101):
-  if i%7==0 and i%11==0:
-   break
-  print(i) 
+# for i in range (1,101):
+#   if i%7==0 and i%11==0:
+#    break
+#   print(i) 
+
+
+#3
+# x="python"
+# for i in x:
+#   if i in 'aeiou':
+#     print("vowel found:",i)
+#     break
+#   print("checked:", i)
+
+  #4
+correct_password="keerthi12345"
+while True:
+    
+  x=input("enter the passwords:")
+  if x==correct_password:
+      print("success message")
+      break
+  else:
+      print("wrong try again")
