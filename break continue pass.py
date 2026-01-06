@@ -54,12 +54,71 @@
 #   print("checked:", i)
 
   #4
-correct_password="keerthi12345"
-while True:
+# correct_password="keerthi12345"
+# while True:
     
-  x=input("enter the passwords:")
-  if x==correct_password:
-      print("success message")
-      break
-  else:
-      print("wrong try again")
+#   x=input("enter the passwords:")
+#   if x==correct_password:
+#       print("success message")
+#       break
+#   else:
+#       print("wrong try again")
+
+ #5
+#  #contiue
+
+# for i in range(1,51):
+#     if i % 5== 0:
+#      continue 
+#     print(i)
+
+#6
+# numbers =[2, 3, 5, -6, -10, 45, -9]
+
+# for num in numbers:
+#     if num < 0:
+#      continue 
+#     print(num)
+
+#7
+# x= "keerthi is good girl" 
+# for ch in x:
+#     if ch==" ":
+#      continue 
+#     print(ch)
+
+#8
+# y=input("enter the string")
+
+# for ch in y:
+#    if ch==" ":
+#        continue
+#    print(ch) 
+      
+#9
+# numbers=[1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13]
+# for num in numbers:
+#     if num%2==0:
+#         continue
+#     print(num)
+
+#10
+# marks= [70,35,89,"A",55,75,"A",90,"A"]
+# for i in marks:
+#     if i=="A":
+#       continue
+#     print(i)
+ #11
+n=int(input("enter the number of students :"))
+for i in range(1, n + 1):
+    mark = int(input("enter marks for student{i}(-1 if absent)"))
+    if mark==-1:
+        continue
+    print("Marks",mark)
+ 
+
+
+
+
+
+      
