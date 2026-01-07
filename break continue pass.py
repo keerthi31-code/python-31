@@ -109,13 +109,32 @@
 #       continue
 #     print(i)
  #11
-n=int(input("enter the number of students :"))
-for i in range(1, n + 1):
-    mark = int(input("enter marks for student{i}(-1 if absent)"))
-    if mark==-1:
-        continue
-    print("Marks",mark)
+# n=int(input("enter the number of students :"))
+# for i in range(1, n + 1):
+#     mark = int(input("enter marks for student{i}(-1 if absent)"))
+#     if mark==-1:
+#         continue
+#     print("Marks",mark)
  
+ #Pass
+ #12
+# for i in range(1,7):
+#     pass 
+
+#13
+def demo():
+    return
+
+#14
+x=int(input("enter a number :"))
+
+if x>0:
+    pass
+elif x==0:
+    print("zero")
+else:
+    print("negative")
+
 
 
 

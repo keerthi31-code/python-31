@@ -1,4 +1,4 @@
-'''x = int(input("enter the value :"))
+x = int(input("enter the value :"))
 if x % 3==0:
  print("A")
 elif x%6==0:
@@ -50,7 +50,6 @@ if password:
 else:
     print("Invalid")
 
-'''
 
 num =int(input()) 
 if num == 0:

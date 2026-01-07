@@ -1,4 +1,4 @@
-'''number =int(input("enter the number :"))
+number =int(input("enter the number :"))
 if number>0:
  print("positive")
 if number%2==0:
@@ -23,7 +23,7 @@ if(A>B) and (A>C):
 else:
   if(B>C):
     print("B is greatest")
-'''
+
 
 marks=int(input("enter the marks:"))
 if marks>=40:
