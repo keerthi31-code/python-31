@@ -122,18 +122,56 @@
 #     pass 
 
 #13
-def demo():
-    return
+#def demo():
+   # return
 
 #14
-x=int(input("enter a number :"))
+# x=int(input("enter a number :"))
 
-if x>0:
-    pass
-elif x==0:
-    print("zero")
-else:
-    print("negative")
+# if x>0:
+#     pass
+# elif x==0:
+#     print("zero")
+# else:
+#     print("negative")
+
+#15
+# class Test:
+#     pass
+
+# t=Test()
+# print("Class created successfully")
+
+# class Student:
+#     pass
+# s=Student
+# print("hi")
+
+# class Employee:
+#     def calculate_salary(self):
+#         pass
+#     def generate_report(self):
+#         pass
+
+#16
+# num=int(input("enter the value :"))
+# for i in range(1,num+1):
+#     if i >5:
+#         pass
+#     else:
+#         print(i)
+
+##Mixed concept questions
+#17
+for i in range(1,101):
+    if i%20==0:
+     break
+    elif i%3==0:
+     continue
+    else:
+      print(i)
+   
+
 
 
 
