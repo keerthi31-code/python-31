@@ -163,14 +163,24 @@
 
 ##Mixed concept questions
 #17
-for i in range(1,101):
-    if i%20==0:
-     break
-    elif i%3==0:
-     continue
-    else:
-      print(i)
-   
+# for i in range(1,101):
+#     if i%20==0:
+#      break
+#     elif i%3==0:
+#      continue
+#     else:
+#       print(i)
+#18
+user=["keerthi","manasa"," ","navya","admin","aashritha"] 
+for user in user:
+   if user=="":
+    continue
+   if user== "admin":
+    break
+   if user =="banned":
+     pass
+   else:
+    print(user)
 
 
 
