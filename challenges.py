@@ -27,3 +27,8 @@ def replace_smiley(text):
 input_text="Hello :) How are you :) ?"
 result=replace_smiley(input_text)
 print(result)
+
+input_text="hi :) how is your day :) ?"
+result=replace_smiley(input_text)
+print(result)
+
