@@ -21,14 +21,22 @@
 #         print(False)
 
 #4
-def replace_smiley(text):
-  return text.replace(":)", "😊")
+# def replace_smiley(text):
+#   return text.replace(":)", "😊")
 
-input_text="Hello :) How are you :) ?"
-result=replace_smiley(input_text)
-print(result)
+# input_text="Hello :) How are you :) ?"
+# result=replace_smiley(input_text)
+# print(result)
 
-input_text="hi :) how is your day :) ?"
-result=replace_smiley(input_text)
-print(result)
+# input_text="hi :) how is your day :) ?"
+# result=replace_smiley(input_text)
+# print(result)
+
+#9
+numbers=[1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13]
+for num in numbers:
+ if num%2==0:
+   continue
+ print(num)
+
 
