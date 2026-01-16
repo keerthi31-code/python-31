@@ -33,10 +33,21 @@
 # print(result)
 
 #9
-numbers=[1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13]
-for num in numbers:
- if num%2==0:
-   continue
- print(num)
+# numbers=[1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13]
+# for num in numbers:
+#  if num%2==0:
+#    continue
+#  print(num)
+
+correct_password="keerthi12345"
+while True:
+    
+  x=input("enter the passwords:")
+  if x==correct_password:
+      print("success message")
+      break
+  else:
+      print("wrong try again")
+
 
 
