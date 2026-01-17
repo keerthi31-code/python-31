@@ -49,5 +49,11 @@ while True:
   else:
       print("wrong try again")
 
+while True:
+  x=int(input("enter the value: "))
+  if x>0:
+   print("you entered the positive value")
+   break
+  print("stops! you entered negative value")
 
 
