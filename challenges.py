@@ -39,21 +39,35 @@
 #    continue
 #  print(num)
 
-correct_password="keerthi12345"
-while True:
+# correct_password="keerthi12345"
+# while True:
     
-  x=input("enter the passwords:")
-  if x==correct_password:
-      print("success message")
-      break
-  else:
-      print("wrong try again")
+#   x=input("enter the passwords:")
+#   if x==correct_password:
+#       print("success message")
+#       break
+#   else:
+#       print("wrong try again")
 
-while True:
-  x=int(input("enter the value: "))
-  if x>0:
-   print("you entered the positive value")
-   break
-  print("stops! you entered negative value")
+# while True:
+#   x=int(input("enter the value: "))
+#   if x>0:
+#    print("you entered the positive value")
+#    break
+#   print("stops! you entered negative value")
+
+# x=input("enter the words:")
+# print(x.title())
+
+# def number_to_dashes():
+#     n=int(input("enter the number:"))
+#     print("_"*n)
+# number_to_dashes()
+
+def add_ends(numbers):
+    print(numbers[0]+numbers[-1])
+add_ends([1, 2, 3, 4, 5])   
+
+    
 
 
