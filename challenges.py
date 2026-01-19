@@ -38,7 +38,7 @@
 #  if num%2==0:
 #    continue
 #  print(num)
-
+#10
 # correct_password="keerthi12345"
 # while True:
     
@@ -48,14 +48,14 @@
 #       break
 #   else:
 #       print("wrong try again")
-
+#11
 # while True:
 #   x=int(input("enter the value: "))
 #   if x>0:
 #    print("you entered the positive value")
 #    break
 #   print("stops! you entered negative value")
-
+#12
 # x=input("enter the words:")
 # print(x.title())
 
@@ -63,11 +63,19 @@
 #     n=int(input("enter the number:"))
 #     print("_"*n)
 # number_to_dashes()
+#13
+# def add_ends(numbers):
+#     print(numbers[0]+numbers[-1])
+# add_ends([1, 2, 3, 4, 5])   
 
-def add_ends(numbers):
-    print(numbers[0]+numbers[-1])
-add_ends([1, 2, 3, 4, 5])   
+#
+# def sub_ends(numbers):
+#     print(numbers[0]-numbers[-1]) 
+# sub_ends([1,2,3,4,5,6])   
 
-    
-
-
+#14
+def mask_credit_card(card_number):
+    masked="*"*(len(card_number)-4)+card_number[-4:]
+    return masked
+n=(input("enter the input :"))
+print(mask_credit_card(n)) 
