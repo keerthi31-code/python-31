@@ -36,3 +36,8 @@ print(text)
 x="10"
 print(int(x))
 print(float(x))
+
+a="learning python" 
+print(a.count("n"))
+print(a.removeprefix("learn"))
+print(a.removesuffix("python"))
