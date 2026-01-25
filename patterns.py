@@ -62,11 +62,11 @@
 #         print(j,end="")
 #     print()     
 
-num=int(input("enter the number:"))
-for i in range(1,num):
-    for j in range(1,num-i+2):
-        print(j,end="")
-    print()           
+# num=int(input("enter the number:"))
+# for i in range(1,num):
+#     for j in range(1,num-i+2):
+#         print(j,end="")
+#     print()           
 
 
 
@@ -88,3 +88,25 @@ for i in range(1,num):
 #         break
 # else:
 #     print("prime")
+
+
+# num=int(input("enter the number :"))
+# for i in range(2,num):
+#     if num%2==0:
+#         print("not prime")
+#         break
+# else:
+#     print("prime")        
+
+
+# for i in range(5):
+#     for j in range(5-i):
+#         print("*",end="")
+#     print()  
+
+num=int(input("enter the number:"))
+for i in range(1,num+1):
+        print(" "*(num-i),end="")
+        print("*"*(2*i-1))
+      
+            
