@@ -115,9 +115,17 @@
 #         print("*"*(2*i-1))
 
 
-num=int(input("enter the number:"))
+# num=int(input("enter the number:"))
+# for i in range(1,num+1):
+#     for j in range(1,i+1):
+#         print(i,end="")
+#     print()           
+# 
+num = int(input("enetr the number :"))
 for i in range(1,num+1):
     for j in range(1,i+1):
-        print(i,end="")
-    print()           
-       
+        if(i+j)%2==0:
+         print(1,end="")   
+        else:
+           print(0,end="") 
+    print()        
