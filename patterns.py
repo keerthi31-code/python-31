@@ -122,10 +122,10 @@
 #     print()           
 # 
 num = int(input("enetr the number :"))
-for i in range(1,num+1):
-    for j in range(1,i+1):
+for i in range(0,num+0):
+    for j in range(0,i+0):
         if(i+j)%2==0:
-         print(1,end="")   
+         print(0,end="")   
         else:
            print(0,end="") 
     print()        
