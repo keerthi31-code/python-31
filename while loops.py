@@ -44,18 +44,18 @@
 #     print(i)
 
 #6
-#num = int(input("enter the number :"))
-# #convert negative to positive
-# if num<0:
-#     num = -num
-# count = 0
-# if num==0:
-#     count=1
-# else:
-#     while num>0:
-#         num=num//10 #removes last digit
-#         count += 1
-# print(count)        
+num = int(input("enter the number :"))
+#convert negative to positive
+if num<0:
+    num = -num
+count = 0
+if num==0:
+    count=1
+else:
+    while num>0:
+        num=num//10 #removes last digit
+        count += 1
+print(count)        
 
 #7
 # for i in range(10,0,-1):
@@ -68,11 +68,11 @@
 #     print("you entered :",num)
 
 #9
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-for num in numbers:
-    if num == 5:
-        continue
-    print(num)
+# for num in numbers:
+#     if num == 5:
+#         continue
+#     print(num)
 
 
