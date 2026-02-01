@@ -121,20 +121,20 @@
 #         print(i,end="")
 #     print()           
 # 
-num = int(input("enetr the number :"))
-for i in range(1,num+1):
-    for j in range(1,i+1):
-        if(i+j)%2==0:
-         print(1,end="")   
-        else:
-           print(0,end="") 
-    print()     
+# num = int(input("enetr the number :"))
+# for i in range(1,num+1):
+#     for j in range(1,i+1):
+#         if(i+j)%2==0:
+#          print(1,end="")   
+#         else:
+#            print(0,end="") 
+#     print()     
 
-    n = 5
+n = 5
 
-for i in range(1, n + 1):          # rows
-    for j in range(1, n + 1):      # columns
-        if i == 1 or i == n or j == 1 or j == n:
+for i in range(2, n + 1):          
+    for j in range(2, n + 1):      
+        if i == 2 or i == n or j == 2 or j == n:
             print("*", end="")
         else:
             print(" ", end="")
