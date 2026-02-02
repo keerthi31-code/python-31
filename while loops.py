@@ -44,18 +44,18 @@
 #     print(i)
 
 #6
-num = int(input("enter the number :"))
-#convert negative to positive
-if num<0:
-    num = -num
-count = 0
-if num==0:
-    count=1
-else:
-    while num>0:
-        num=num//10 #removes last digit
-        count += 1
-print(count)        
+# num = int(input("enter the number :"))
+# #convert negative to positive
+# if num<0:
+#     num = -num
+# count = 0
+# if num==0:
+#     count=1
+# else:
+#     while num>0:
+#         num=num//10 #removes last digit
+#         count += 1
+# print(count)        
 
 #7
 # for i in range(10,0,-1):
@@ -75,4 +75,74 @@ print(count)
 #         continue
 #     print(num)
 
+
+
+## BASIC WHILE LOOP CODE
+# i=1
+# while i<=5:
+#     print(i)
+#     i=i+1
+
+# i=1
+# while i <=10:
+#     if i == 5:
+#         break
+#     print(i)
+#     i=i+1   
+
+# i=0
+# while i<5:
+#     i+=1
+#     if i==3:
+#         continue
+#     print(i)
+
+# n=int(input("enter the value:"))
+# i=1
+# while i<=n:
+#     print(i)
+#     i+=1  
+
+# questions
+# i=1
+# while i<=10:
+#     print(i)
+#     i=i+1  
+
+
+# i=10
+# while i>=1:
+#     print(i)
+#     i=i-1  
+
+# i=2
+# while i<=20:
+#     print (i)
+#     i=i+2 
+
+
+# i=1
+# while i<=20:
+#     if i%2!=0:
+#      print(i)
+#     i+=1
+
+# i=1
+# while i<=10:
+#    print(5,"x",i,"=",5*i)
+#    i+=1    
+
+# n=int(input("enter the number:"))
+# i=1
+# while i<=n:
+#  print(i)
+#  i+=1
+
+num=int(input("enter the digits:")) 
+count=0
+while num!=0:
+ num= num//10
+ count=count+1
+print(count)
+ 
 

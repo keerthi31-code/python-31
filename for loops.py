@@ -34,11 +34,11 @@
 # #    sum+=i
 # # print(sum)   
 
-count=0
-for i in range(1,31):
- if i%3==0:
-  count +=1
-print(count)
+# count=0
+# for i in range(1,31):
+#  if i%3==0:
+#   count +=1
+# print(count)
 
 # for i in range(1, 11):
 #   print(i, "square is", i * i)
