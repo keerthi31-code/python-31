@@ -138,28 +138,75 @@
 #  print(i)
 #  i+=1
 
-num=int(input("enter the digits:")) 
-count=0
-while num!=0:
- num= num//10
- count=count+1
-print(count)
+# num=int(input("enter the digits:")) 
+# count=0
+# while num!=0:
+#  num= num//10
+#  count=count+1
+# print(count)
  
-n=1234
-rev=0
-while n>0 :
-    x=n%10
-    n=n//10
-    rev=rev*10+x
-print(rev)
+# n=1234
+# rev=0
+# while n>0 :
+#     x=n%10
+#     n=n//10
+#     rev=rev*10+x
+# print(rev)
 
-n=int(input("enter the vlaue: "))
-rev=0
-while n>0:
-    x=n%10
-    n=n//10
-    rev=rev*10+x
-print(rev)    
+# n=int(input("enter the vlaue: "))
+# rev=0
+# while n>0:
+#     x=n%10
+#     n=n//10
+#     rev=rev*10+x
+# print(rev)    
 
   
+# n=34567
+# sum_digits=0
+# while n>0:
+#     x=n%10
+#     sum_digits=sum_digits +x
+#     n=n//10
+# print(sum_digits)  
 
+# n=int(input("enter the digits :"))
+# sumofDigits=0
+# while n>0:
+#     x=n%10
+#     sumofDigits= sumofDigits + x
+#     n=n//10
+# print(sumofDigits)    
+
+# n=int(input("enter the value:"))
+# original=n
+# rev=0
+# while n>0:
+#     x=n%10
+#     rev=rev*10+x
+#     n=n//10
+
+# if original==rev:
+#     print("yes palindrome")
+# else:
+#     print("no")   
+# 
+n=370
+original=n
+sum_digits=0
+digits=0
+temp=n
+
+while temp >0:
+    digits +=1
+    temp=temp//10
+
+while n>0:
+      digit=n%10
+      sum_digits=sum_digits+(digit** digits)
+      n=n//10  
+
+if sum_digits==original:
+    print("yes")
+else:
+    print("no")
