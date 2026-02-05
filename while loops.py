@@ -191,22 +191,22 @@
 # else:
 #     print("no")   
 # 
-n=370
-original=n
-sum_digits=0
-digits=0
-temp=n
+# n=370
+# original=n
+# sum_digits=0
+# digits=0
+# temp=n
 
-while temp >0:
-    digits +=1
-    temp=temp//10
+# while temp >0:
+#     digits +=1
+#     temp=temp//10
 
-while n>0:
-      digit=n%10
-      sum_digits=sum_digits+(digit** digits)
-      n=n//10  
+# while n>0:
+#       digit=n%10
+#       sum_digits=sum_digits+(digit** digits)
+#       n=n//10  
 
-if sum_digits==original:
-    print("yes")
-else:
-    print("no")
+# if sum_digits==original:
+#     print("yes")
+# else:
+#     print("no")
