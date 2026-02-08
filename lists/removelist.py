@@ -25,7 +25,7 @@ del thislist[1]
 print(thislist)
 
 thislist=["apple","banana"]
-del thislist
+del thislist()
 print(thislist)
 
 #clear the list -- clear() method emties the list
@@ -33,3 +33,7 @@ print(thislist)
 thislist=["apple","banana"]
 thislist.clear()
 print(thislist) 
+
+thislist=["keerthi","manasa","navya","sriya","Aash"]
+thislist.clear()
+print(thislist)
