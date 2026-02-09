@@ -25,8 +25,7 @@ del thislist[1]
 print(thislist)
 
 thislist=["apple","banana"]
-del thislist()
-print(thislist)
+del thislist 
 
 #clear the list -- clear() method emties the list
 # remains but no content
