@@ -28,3 +28,18 @@ def myfunc(n):
 thislist = [100, 50, 65, 82, 23]
 thislist.sort(key = myfunc)
 print(thislist)
+
+#case insensitive sort -- sort() method is case sensitive, resulting in all capital letters being sorted before lower case letters
+thislist = ["Banana", "Orange", "Kiwi", "cherry"]
+thislist.sort()
+print(thislist)
+
+#built-in function
+thislist=["banana","Orange","Kiwi","cherry"]
+thislist.sort(key=str.lower)
+print(thislist)
+
+#reverse order
+thislist=["banana","Orange","Kiwi","cherry"]
+thislist.reverse()
+print(thislist)
