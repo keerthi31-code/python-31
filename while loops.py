@@ -145,13 +145,13 @@
 #  count=count+1
 # print(count)
  
-# n=1234
-# rev=0
-# while n>0 :
-#     x=n%10
-#     n=n//10
-#     rev=rev*10+x
-# print(rev)
+n=1234
+rev=0
+while n>0 :
+    x=n%10
+    n=n//10
+    rev=rev*10+x
+print(rev)
 
 # n=int(input("enter the vlaue: "))
 # rev=0
