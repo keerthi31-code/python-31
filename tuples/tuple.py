@@ -28,3 +28,12 @@ print(type(mytuple))
 #tuple() contructor used to make a tuple
 thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
 print(thistuple)
+
+
+#check if item exists
+ # by using in keyword we can check whether the item are exists
+thistuple=("apple","banana","cherry")
+if "kiwi" in thistuple:
+    print("yes")
+else:
+    print("no")    
