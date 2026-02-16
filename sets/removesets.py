@@ -14,3 +14,6 @@ thisset={"apple","banana","kiwi"}
 x=thisset.pop()
 print(x)
 print(thisset)
+
+#clear()-- that empties the set
+#del()-- delete the set completely
