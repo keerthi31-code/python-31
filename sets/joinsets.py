@@ -59,3 +59,34 @@ set1={"apple","banana","kiwi"}
 set2={"microsoft","apple","google"}
 set3=set1&set2
 print(set3)
+
+set1={"apple","banana","kiwi"}
+set2={"microsoft","apple","google"}
+set1.intersection_update(set2)
+print(set1)
+
+set1={"apple",1,"banana",0,"cherry"}
+set2={False,"google",1,"apple",2,True}
+set3=set1.intersection(set2)
+print(set3)
+
+#difference() method will return a new set that will contain
+#only the items from the first set that are not present in the other set
+set1={"apple","banana","cherry"}
+set2={"google","microsoft","apple"}
+set3=set1.difference(set2)
+print(set3)
+
+#difference_update
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+set1.difference_update(set2)
+print(set1)
+
+#symmetric difference() methods will keep only the elements that are not present in both sets
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+
+set3 = set1.symmetric_difference(set2)
+
+print(set3)
