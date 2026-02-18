@@ -29,3 +29,26 @@ thisdict={
     "year":2020
 }
 print(thisdict)
+
+#dictionary length
+thisdict={
+    "name":"keerthi",
+    "course":"python"
+}
+print(len(thisdict))
+
+#dictionary items - data types
+#the values in dictionary items can be of any data types
+thisdict={
+    "name":"keerthi",
+    "course":"python",
+    "year":1964   
+}
+print(type(thisdict))
+
+#dict() constructor
+#it is also possible to use the dict() constructor to make a dictionary
+thisdict=dict(name="keerthi",age=21,country="india")
+print(thisdict)
+
+
