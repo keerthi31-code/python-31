@@ -33,4 +33,9 @@ def get_greet():
    return"hi"
 print(get_greet())
 
+#the pass statement -- Function definitions cannot be empty
+# so need to create a function placeholder without any code, use the pass statement:
+def my_funtion():
+    pass
+
 
