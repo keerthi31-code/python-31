@@ -1,0 +1,22 @@
+# a function is a block of reusable code that performs a specific task
+#Instead of writing the same code again and again, we put it inside a function and call it whenever needed.
+#why do we need functions
+#avoid repeating code
+#make code clean and readable
+#break big problems into smaller parts
+
+def my_function():
+    print("hello from a function")
+my_function() #to call a function, we its name and parantheses
+
+# we can call the same function multiple times
+#Function names follow the same rules as variable names in Python:
+
+# A function name must start with a letter or underscore
+# A function name can only contain letters, numbers, and underscores
+# Function names are case-sensitive (myFunction and myfunction are different)
+def fahrenheit_to_celsius(fahrenheit):
+    return(fahrenheit-32)*5/9
+print(fahrenheit_to_celsius(77))
+print(fahrenheit_to_celsius(95))
+print(fahrenheit_to_celsius(50))
