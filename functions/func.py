@@ -20,3 +20,17 @@ def fahrenheit_to_celsius(fahrenheit):
 print(fahrenheit_to_celsius(77))
 print(fahrenheit_to_celsius(95))
 print(fahrenheit_to_celsius(50))
+
+#return values --When a function reaches a return statement, it stops executing and sends the result back
+def get_greeting():
+    return"hello"
+
+message = get_greeting()
+print(message)
+
+#using thre return value directly
+def get_greet():
+   return"hi"
+print(get_greet())
+
+
