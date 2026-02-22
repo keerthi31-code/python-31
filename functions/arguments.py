@@ -18,4 +18,11 @@ my_function("keerthi")  # "keerthi" is an argument
 #number of arguments 
 def my_function(fname, lname):
     print(fname+ " " + lname)
-my_function("keerthi","muchha")    
+my_function("keerthi","muchha")  
+
+#default parameter values
+def my_function(name="friend"):
+    print("hello",name)
+my_function("keerthi")
+my_function("navya")
+my_function()    
