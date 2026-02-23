@@ -20,9 +20,16 @@ def my_function(fname, lname):
     print(fname+ " " + lname)
 my_function("keerthi","muchha")  
 
+
 #default parameter values
 def my_function(name="friend"):
     print("hello",name)
 my_function("keerthi")
 my_function("navya")
 my_function()    
+
+#keyword arguments -- can send arguments with the key = value syntax
+def my_function(animal, name):
+    print("i have a",animal)
+    print("my",animal + "'s name is", name)
+my_function(animal="dog", name="buddy")    
