@@ -46,3 +46,9 @@ def my_function(animal, name):
     print("i have a", animal)
     print("my", animal + "'s name is", name)
 my_function("dog","buddy")
+
+def my_function(animal, name):
+  print("I have a", animal)
+  print("My", animal + "'s name is", name)
+
+my_function("Buddy", "dog")
