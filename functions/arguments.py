@@ -33,3 +33,16 @@ def my_function(animal, name):
     print("i have a",animal)
     print("my",animal + "'s name is", name)
 my_function(animal="dog", name="buddy")    
+
+def my_function(animal, name):
+  print("I have a", animal)
+  print("My", animal + "'s name is", name)
+
+my_function(name = "Buddy", animal = "dog")
+
+#positional argument
+#when calling a function with arguments without using keywords, they are called positional argmts
+def my_function(animal, name):
+    print("i have a", animal)
+    print("my", animal + "'s name is", name)
+my_function("dog","buddy")
