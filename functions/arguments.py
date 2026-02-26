@@ -65,4 +65,13 @@ def my_function(animal, name, age):
 
 my_function("dog", name = "Buddy", age = 5)
 
+#passing different data types
+def my_function(fruits):
+  for fruit in fruits:
+    print(fruit)
+
+my_fruits = ["apple", "banana", "cherry"]
+my_function(my_fruits)
+
+
 
