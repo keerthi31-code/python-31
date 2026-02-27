@@ -39,3 +39,14 @@ def my_funtion():
     pass
 
 
+def add(x,y):
+    a=x
+    b=y
+    c=a+b
+    return (c)
+result=add(2,3)
+print(result)
+result=add(10,87)
+print("result is ",result)  
+result=add(5,6)
+print("the result",result)
