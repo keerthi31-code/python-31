@@ -50,3 +50,11 @@ result=add(10,87)
 print("result is ",result)  
 result=add(5,6)
 print("the result",result)
+
+def myfunc():
+    return "hello"
+print(myfunc())
+
+def myfun():
+    return("keerthi","python")
+print(myfun())
