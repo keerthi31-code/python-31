@@ -66,7 +66,11 @@ def my_function(age):
         return "minor"
 print(my_function(20))    
 print(my_function(17))
-print(my_function(29))    
+print(my_function(29))
+
+def func(num):
+    return num*num
+print(func(5))
 
 
 
