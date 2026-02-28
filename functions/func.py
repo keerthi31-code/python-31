@@ -58,3 +58,16 @@ print(myfunc())
 def myfun():
     return("keerthi","python")
 print(myfun())
+
+def my_function(age):
+    if age > 18:
+        return "major"
+    else:
+        return "minor"
+print(my_function(20))    
+print(my_function(17))
+print(my_function(29))    
+
+
+
+    
