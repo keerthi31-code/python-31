@@ -72,6 +72,15 @@ def func(num):
     return num*num
 print(func(5))
 
+def greater(x,y):
+    a=x
+    b=y
+    if a>b:
+        return a
+    else:
+        return b
+print(greater(10,20))
+
 
 
     
