@@ -81,6 +81,15 @@ def greater(x,y):
         return b
 print(greater(10,20))
 
+def is_even(n):
+    return n%2==0
+print (is_even(2))
+print(is_even(45))
+
+def square(n):
+    return n*n
+print(square(2.5))
+
 
 
     
