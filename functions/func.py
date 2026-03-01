@@ -90,6 +90,12 @@ def square(n):
     return n*n
 print(square(2.5))
 
+def maximum(a,b):
+    if a>b:
+        return a
+    else:
+        return b
+print(maximum(5,7))    
 
 
     
