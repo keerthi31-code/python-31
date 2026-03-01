@@ -38,7 +38,7 @@ print(get_greet())
 def my_funtion():
     pass
 
-
+### function problems ###
 def add(x,y):
     a=x
     b=y
@@ -97,5 +97,14 @@ def maximum(a,b):
         return b
 print(maximum(5,7))    
 
+
+def factorial(n):
+    result=1
+    for i in range(1, n+1):
+        result=result*i
+    return result
+print(factorial(5))    
+    
+     
 
     
