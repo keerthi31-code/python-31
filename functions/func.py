@@ -107,11 +107,23 @@ print(factorial(5))
     
      
 def sum_of_digits(n):
-    result =0
+    result = 0
     while  n>0:
         result+=n%10   
         n=n//10
     return result
-print(sum_of_digits(123))      
+print(sum_of_digits(123))    
+
+def is_palindrome(n):
+    original =n 
+    result=0
+
+    while n>0:
+        result = result * 10 +(n % 10)
+        n=n//10
+    return original== result
+    
+print(is_palindrome(121))    
+
 
     
