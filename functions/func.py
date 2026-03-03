@@ -142,7 +142,15 @@ def countvowels(s):
         if ch in "aeiou":
             count +=1
     return count
-print(countvowels("lasya"))        
+print(countvowels("lasya"))
+
+def reverse_string(s):
+    rev=""
+    for ch in s:
+        rev = ch + rev
+    return rev
+print(reverse_string("keerthi"))
+
 
 
 
