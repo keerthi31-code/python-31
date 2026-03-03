@@ -123,7 +123,27 @@ def is_palindrome(n):
         n=n//10
     return original== result
     
-print(is_palindrome(121))    
+print(is_palindrome(121))
+
+
+def count_vowels(s):
+    count=0
+    for ch in s:
+        if ch in "aeiouAEIOU":
+            count+=1
+    return count    
+
+
+print(count_vowels("keerthi"))   
+
+def countvowels(s):
+    count=0
+    for ch in s:
+        if ch in "aeiou":
+            count +=1
+    return count
+print(countvowels("lasya"))        
+
 
 
     
