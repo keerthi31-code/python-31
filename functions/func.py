@@ -151,6 +151,57 @@ def reverse_string(s):
     return rev
 print(reverse_string("keerthi"))
 
+def reversestring(s):
+    rev="" 
+    for ch in s:
+        rev=ch+rev
+    return rev
+print(reversestring("vikatakavi"))   
+
+
+def fibonacci(n):
+ if n == 1:
+     return 0
+ if n ==2:
+     return 1
+ a=0
+ b=1
+ for i in range(3,n+1):
+    next=a+b
+    a=b
+    b=next
+ return b
+print(fibonacci(5))
+   
+
+def fibonacci_num(n):
+    if n==1:
+        return 0
+    if n==2:
+        return 1
+    a=0
+    b=1
+    for i in range(3,n+1):
+        next=a+b
+        a=b
+        b=next
+    return b
+print(fibonacci_num(6))  
+
+def is_prime(n):
+    if n<=1:
+        return False
+    for i in range(2,n-1):
+        if n % i==0:
+            return False
+    return True
+print(is_prime(5))
+
+
+
+
+
+
 
 
 
