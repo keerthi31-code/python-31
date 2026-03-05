@@ -130,13 +130,25 @@
 #            print(0,end="") 
 #     print()     
 
-n = 5
+# n = 5
 
-for i in range(2, n + 1):          
-    for j in range(2, n + 1):      
-        if i == 2 or i == n or j == 2 or j == n:
-            print("*", end="")
-        else:
-            print(" ", end="")
-    print()
+# for i in range(2, n + 1):          
+#     for j in range(2, n + 1):      
+#         if i == 2 or i == n or j == 2 or j == n:
+#             print("*", end="")
+#         else:
+#             print(" ", end="")
+#     print()
+
+lst=list(map(int,input().split(",")))
+dic={}
+for i in lst:
+    if i in dic:
+        dic[i] +=1
+    else:
+        dic[i]=1
+
+for key in dic:
+    if dic[key]==1:
+        print(key,end=" ")
 
