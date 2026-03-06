@@ -203,6 +203,16 @@ def list_sum(lst):
         total=total+num   
     return total
 print(list_sum([1,2,3,4,5]))
+print(list_sum([2,3,5,6,7,8,9]))
+
+
+def find_max(lst):
+    max_num=lst[0]
+    for num in lst:
+        if num>max_num:
+            max_num=num
+    return max_num
+print(find_max([3,7,2,9,5]))        
 
 
 
