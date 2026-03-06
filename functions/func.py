@@ -212,7 +212,15 @@ def find_max(lst):
         if num>max_num:
             max_num=num
     return max_num
-print(find_max([3,7,2,9,5]))        
+print(find_max([3,7,2,9,5])) 
+
+def count_even(lst):
+    count=0
+    for  num in lst:
+        if num %2==0:
+            count+=1
+    return count        
+print(count_even([1,2,3,4,5,6]))
 
 
 
