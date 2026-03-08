@@ -229,7 +229,15 @@ def count_odd(lst):
         if num %2!=0:
             count+=1
     return count
-print(count_odd([1,2,3,4,5,6,7]))        
+print(count_odd([1,2,3,4,5,6,7]))     
+
+def count_odd(lst):
+    count=0
+    for num in lst:
+        if num %2!=0:
+            count+=1
+    return count
+print(count_odd([1,2,3,4,5,6,7,8,9,10,11,12,13])) 
 
 
 
