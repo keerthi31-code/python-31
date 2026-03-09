@@ -70,3 +70,15 @@ def fibonacci(n):
 n=int(input("enter the value:"))
 print(fibonacci(n))
 
+def operations(a,b):
+    add = a+b
+    sub = a-b
+    mul = a*b
+    div = a/b
+    return add,sub,mul,div    
+
+
+
+a=int(input("enter the number:"))
+b=int(input("enter the number:"))
+print(operations(a,b))
