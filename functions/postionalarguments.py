@@ -140,29 +140,50 @@ operations
 # info(name="apple",color="red")   
 
 #problems
-def add(a,b):
-   print(a+b)
-a,b=map(int,input().split())
-add(a,b)
+# def add(a,b):
+#    print(a+b)
+# a,b=map(int,input().split())
+# add(a,b)
 
-def areaofrectangle(length, width):
-    area=length*width
-    print(area)
-length,width=map(int,input("enter the length,width:").split())
-areaofrectangle(length,width) 
+# def areaofrectangle(length, width):
+#     area=length*width
+#     print(area)
+# length,width=map(int,input("enter the length,width:").split())
+# areaofrectangle(length,width) 
 
-def max(a,b):
-    if a > b:
-        return a
-    else:
-        return b
-a,b=map(int,input("enter the numbers: ").split())
-print(max(a,b))   
+# def max(a,b):
+#     if a > b:
+#         return a
+#     else:
+#         return b
+# a,b=map(int,input("enter the numbers: ").split())
+# print(max(a,b))   
 
-def student(**data):
-    print(data)
-student(name="keerthi", age=21)   
+# def student(**data):
+#     print(data)
+# student(name="keerthi", age=21)   
 
+# def student(**data):
+#     for key, value in data.items():
+#         print(key,":",value)
+# student(name="keerthi",age=21)        
+    
+# def power(base, exponent):
+#     power=base**exponent
+#     print(power)
+# base,exponent=map(int,input("enter the values: ").split())
+# power(base, exponent)    
+
+def greet(name="guest"):
+    print("hello",name)
+greet("keerthi")  
+greet()
+
+def interest(principal, rate =5):
+    SI=(principal * rate*1)/100
+    print(SI)
+principal=int(input("enter the principal: "))
+interest(principal)    
 
 
    
