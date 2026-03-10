@@ -159,6 +159,11 @@ def max(a,b):
 a,b=map(int,input("enter the numbers: ").split())
 print(max(a,b))   
 
+def student(**data):
+    print(data)
+student(name="keerthi", age=21)   
+
+
 
    
    
