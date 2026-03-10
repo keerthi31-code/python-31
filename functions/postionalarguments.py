@@ -79,6 +79,7 @@ operations
 
 
 
+
 # a=int(input("enter the number:"))
 # b=int(input("enter the number:"))
 # print(operations(a,b))
@@ -96,44 +97,61 @@ operations
 
 #default arguments
 #giving a default value to the parameter
-def greet(name="guest"):
-    print("hello",name)
-greet("keerthi")
-greet()   
+# def greet(name="guest"):
+#     print("hello",name)
+# greet("keerthi")
+# greet()   
 
-def greet(name="welcome"):
-    print("hello",name)
-greet("keerthi") 
-greet()   
+# def greet(name="welcome"):
+#     print("hello",name)
+# greet("keerthi") 
+# greet()   
 
-def count(n):
-    count=0
-    for ch in n:
-     count +=1
-    return count
-n=input("enter the name:")    
-print(count(n))
+# def count(n):
+#     count=0
+#     for ch in n:
+#      count +=1
+#     return count
+# n=input("enter the name:")    
+# print(count(n))
 
-#arbitary arguments(*args)
-#it is used when don't how many arguments will come
-def add(*numbers):
-   print(sum(numbers))
-add(130,123,345,23)  
+# #arbitary arguments(*args)
+# #it is used when don't how many arguments will come
+# def add(*numbers):
+#    print(sum(numbers))
+# add(130,123,345,23)  
 
-#numbers become tuple
+# #numbers become tuple
 
-def greet(*name):
-   for n in name:
-    print("hello",n)
-greet("keerthi","manasa","navya","sriya") 
+# def greet(*name):
+#    for n in name:
+#     print("hello",n)
+# greet("keerthi","manasa","navya","sriya") 
 
-#key Arbitrary arguments(**kwargs)
-#used for multiple named arguments
+# #key Arbitrary arguments(**kwargs)
+# #used for multiple named arguments
 
-def info(**data):
-    print(data)
-info(name="keerthi",age=21)   
+# def info(**data):
+#     print(data)
+# info(name="keerthi",age=21)   
 
-def info(**data):
-   print(data)
-info(name="apple",color="red")   
+# def info(**data):
+#    print(data)
+# info(name="apple",color="red")   
+
+#problems
+def add(a,b):
+   print(a+b)
+a,b=map(int,input().split())
+add(a,b)
+
+def areaofrectangle(length, width):
+    area=length*width
+    print(area)
+length,width=map(int,input("enter the length,width:").split())
+areaofrectangle(length,width)   
+
+
+   
+   
+
