@@ -149,7 +149,15 @@ def areaofrectangle(length, width):
     area=length*width
     print(area)
 length,width=map(int,input("enter the length,width:").split())
-areaofrectangle(length,width)   
+areaofrectangle(length,width) 
+
+def max(a,b):
+    if a > b:
+        return a
+    else:
+        return b
+a,b=map(int,input("enter the numbers: ").split())
+print(max(a,b))   
 
 
    
