@@ -48,14 +48,14 @@ print(a.count("n"))
 print(a.removeprefix("learn"))
 print(a.removesuffix("python"))
 
-#print(a.split())
-# a="  learning python  "
-# print(a)
-# print(len(a))
-# print(a.strip())
+print(a.split())
+a="  learning python  "
+print(a)
+print(len(a))
+print(a.strip())
 
-# print(a.rstrip())
-# print(len(a))
+print(a.rstrip())
+print(len(a))
 
-# print(a.lstrip())
-# print(len(a))
+print(a.lstrip())
+print(len(a))
