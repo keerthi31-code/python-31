@@ -183,7 +183,16 @@ def interest(principal, rate =5):
     SI=(principal * rate*1)/100
     print(SI)
 principal=int(input("enter the principal: "))
-interest(principal)    
+interest(principal)   
+
+def sum_numbers(*numbers):
+    print(sum(numbers))
+sum_numbers(1,2,3,4)    
+
+def print_names(*names):
+    for n in names:
+     print("hello",n)
+print_names("keerthi","navya","manasa")         
 
 
    
