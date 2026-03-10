@@ -192,7 +192,12 @@ sum_numbers(1,2,3,4)
 def print_names(*names):
     for n in names:
      print("hello",n)
-print_names("keerthi","navya","manasa")         
+print_names("keerthi","navya","manasa")       
+
+def person(**details):
+   for key,values in details.items():
+      print(key, ":",values)
+person(name="keerthi",age=21,city="delhi")      
 
 
    
