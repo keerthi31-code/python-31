@@ -231,4 +231,15 @@ def info(**data):
     print("hi i'm",data["name"],data["course"],data["branch"],"with",data["per"])
 info(name="keerthi",course="btech",branch="cse ai&ml",per=80)    
         
+def prime_number(num):
+    result=0
+    for i in range(2,num):
+        if num%i==0:
+            return False
+    return True
+n=int(input())
+for i in range(2,n+1):
+    if prime_number(i):
+        print(i, end=" ")
+
 
