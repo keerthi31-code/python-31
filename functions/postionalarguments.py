@@ -55,20 +55,16 @@ operations
 """
 
 # def fibonacci(n):
-#     if n==1:
-#         return 0
-#     if n==2:
-#         return 1
 #     a=0
 #     b=1
-
-#     for i in range(3,n+1):
+#     for i in range(n):
+#         print(a,end="")    
 #         c=a+b
 #         a=b
 #         b=c
 #     return b
 # n=int(input("enter the value:"))
-# print(fibonacci(n))
+# fibonacci(n)
 
 # def operations(a,b):
 #     add = a+b
@@ -174,32 +170,65 @@ operations
 # base,exponent=map(int,input("enter the values: ").split())
 # power(base, exponent)    
 
-def greet(name="guest"):
-    print("hello",name)
-greet("keerthi")  
-greet()
+# def greet(name="guest"):
+#     print("hello",name)
+# greet("keerthi")  
+# greet()
 
-def interest(principal, rate =5):
-    SI=(principal * rate*1)/100
-    print(SI)
-principal=int(input("enter the principal: "))
-interest(principal)   
+# def interest(principal, rate =5):
+#     SI=(principal * rate*1)/100
+#     print(SI)
+# principal=int(input("enter the principal: "))
+# interest(principal)   
 
-def sum_numbers(*numbers):
-    print(sum(numbers))
-sum_numbers(1,2,3,4)    
+# def sum_numbers(*numbers):
+#     print(sum(numbers))
+# sum_numbers(1,2,3,4)    
 
-def print_names(*names):
-    for n in names:
-     print("hello",n)
-print_names("keerthi","navya","manasa")       
+# def print_names(*names):
+#     for n in names:
+#      print("hello",n)
+# print_names("keerthi","navya","manasa")       
 
-def person(**details):
-   for key,values in details.items():
-      print(key, ":",values)
-person(name="keerthi",age=21,city="delhi")      
+# def person(**details):
+#    for key,values in details.items():
+#       print(key, ":",values)
+# person(name="keerthi",age=21,city="delhi")      
 
 
+   # print a string "Hi I'm Bhavanidevi Btech ECE with 80%"
+#fun(name="Bhavanidevi",course="Btech", branch="ECE", perc=80%)
+
+#find the prime numbers for the given range---100
    
-   
+
+#functions--define,parameter, return,print,
+# *args-if we don't know how many no.of parameters will be pass by the user
+"""
+def fun(fname,lname):
+    print("Hi Im"+" "+fname+" "+lname)
+fun(fname='bhavani',lname='devi')
+
+"""
+"""
+def fun1(fn,ln):
+    print("Hlo"+fn+ln)
+fun1('how', 'areyou')
+"""
+"""
+def fun(*names):#*args
+    return "Hi my name is"+" "+ names[2]
+
+print(fun("a","b","c","d"))
+
+
+def fun1(**names):
+    return "Hi my name is"+" "+names["lname"]
+print(fun1(fname="a",lname="b"))
+    
+"""
+def info(**data):
+    print("hi i'm",data["name"],data["course"],data["branch"],"with",data["per"])
+info(name="keerthi",course="btech",branch="cse ai&ml",per=80)    
+        
 
