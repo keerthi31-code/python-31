@@ -232,7 +232,6 @@ def info(**data):
 info(name="keerthi",course="btech",branch="cse ai&ml",per=80)    
         
 def prime_number(num):
-    result=0
     for i in range(2,num):
         if num%i==0:
             return False
