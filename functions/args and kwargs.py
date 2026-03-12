@@ -14,6 +14,12 @@ def add(*numbers):
     for i in numbers:
         sum+=i
     print(sum)
-add(1,2,3,4,5)        
+add(1,2,3,4,5) 
+
+def greet(*names):
+    for n in names:
+        print("hello",n)
+greet("keerthi","navya")        
+
 
     
