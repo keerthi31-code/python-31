@@ -33,7 +33,35 @@ info(name="keerthi",age=21)
 def info(**data):
     for key,value in data.items():
         print(key,":",value)
-info(name="keerthi",age=21,city="hyd")        
+info(name="keerthi",age=21,city="hyd")   
+
+#using *args and **kwargs together
+def display(*args,**kwargs):
+    print("Args:",args)
+    print("Kwargs:",kwargs)
+display(1,3,4, name="keerthi",age=21) 
+
+def example(a,b,*args,**kwargs):
+    print(a,b)
+    print(args)
+    print(kwargs)
+example(1,2,3,4,name="keerthi")     
+
+def sum_numbers(*numbers):
+    sum=0
+    for i in numbers:
+        sum+=i
+    print(sum)
+sum_numbers(2,3,4,5)    
+
+def max(*n):
+    num=0
+    for i in n:
+        if i > num:
+            num=i
+    print(num)
+max(10,5,8,20,3)            
+
 
 
 
