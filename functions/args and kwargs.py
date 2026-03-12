@@ -19,7 +19,23 @@ add(1,2,3,4,5)
 def greet(*names):
     for n in names:
         print("hello",n)
-greet("keerthi","navya")        
+greet("keerthi","navya")     
+
+# *args collects the positional arguments
+
+# KWARGS **kwargs allows a function to accept any number of keyword arguments
+#this arguments are stored in a dictionary
+def info(**data):
+    print(data)
+info(name="keerthi",age=21)    
+
+#using loop with **kwargs
+def info(**data):
+    for key,value in data.items():
+        print(key,":",value)
+info(name="keerthi",age=21,city="hyd")        
+
+
 
 
     
