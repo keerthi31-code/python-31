@@ -241,4 +241,13 @@ for i in range(2,n+1):
     if prime_number(i):
         print(i, end=" ")
 
+def palindromic(lst):
+    for i in lst:
+        if i ==i[::-1]:
+            print(i)
+
+
+(palindromic(["keerthi","navya","dad","mom"]))
+
+
 
