@@ -245,9 +245,23 @@ def palindromic(lst):
     for i in lst:
         if i ==i[::-1]:
             print(i)
-
-
 (palindromic(["keerthi","navya","dad","mom"]))
+
+#take a list str and cnt the vowels in each str,
+# if the cnt of vowels is even print the str
+
+def vowel_count(lst):
+    vowels="aeiouAEIOU"
+    for i in lst:
+        count=0
+        for ch in i:
+                if i in vowels:
+                    count+=1
+        if count%2==0:
+                print(i)
+vowel_count(["keerthi","navya","aashritha"])                
+
+
 
 
 
