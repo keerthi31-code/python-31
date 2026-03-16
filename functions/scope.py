@@ -15,3 +15,6 @@ x=20
 def fun():
    print(x)
 fun()    
+x=30
+def fun():print(x)
+fun()
