@@ -9,3 +9,13 @@ lambda x: x+10
 num=[1,2,3,4]
 result=list(map(lambda x:x*2,num))
 print(result)
+
+#filter() function
+#it selects elements based on a condition
+num=[1,2,3,4,5]
+result=list(filter(lambda x: x%2==0, num))
+print(result)
+
+num=[1,2,3,4,5,6,7,8,9]
+result=list(filter(lambda x: x%3==0,num))
+print(result)
