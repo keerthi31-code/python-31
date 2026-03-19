@@ -26,4 +26,12 @@ def fact(n):
         return 1
     return n* fact(n-1)
 print(fact(4))
+
+def palin(s):
+    if len(s)<=1:
+        return True
+    if s[0]!=s[-1]:
+        return False
+    return palin(s[1:-1])
+print(palin("keerthi"))
     
