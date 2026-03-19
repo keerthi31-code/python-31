@@ -19,3 +19,11 @@ print(result)
 num=[1,2,3,4,5,6,7,8,9]
 result=list(filter(lambda x: x%3==0,num))
 print(result)
+
+#recusion -- a function calling it self
+def fact(n):
+    if n==1:
+        return 1
+    return n* fact(n-1)
+print(fact(4))
+    
