@@ -30,3 +30,10 @@ def isPowerOfFour(n):
 print(isPowerOfFour(16))
 print(isPowerOfFour(5))
 print(isPowerOfFour(1)) 
+
+def reverse_string(n):
+    if len(n)==0:
+         return n
+    return n[-1]+reverse_string(n[:-1])
+
+print(reverse_string("keerthi"))    
