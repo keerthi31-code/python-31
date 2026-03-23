@@ -36,4 +36,17 @@ def reverse_string(n):
          return n
     return n[-1]+reverse_string(n[:-1])
 
-print(reverse_string("keerthi"))    
+print(reverse_string("keerthi"))   
+
+def fib(n):
+    if n==1:
+        return 0
+    if n==2:
+         return 1  
+    return fib(n-1)+fib(n-2)
+n=int(input("enter the number: "))
+for i in range(1,n+1):
+    print(fib(i), end=" ")
+
+
+    
