@@ -71,4 +71,11 @@ def sum_digits(n):
     return total
 
 print(sum_digits(123))
-    
+
+def product(n):
+    total=1
+    while n>0:
+        total *=n%10
+        n=n//10
+    return total    
+print(product(123))
