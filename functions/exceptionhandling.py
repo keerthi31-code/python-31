@@ -74,8 +74,14 @@ print(sum_digits(123))
 
 def product(n):
     total=1
-    while n>0:
-        total *=n%10
-        n=n//10
+    while n>0: # 123>0
+        total *=n%10 # 1*=123%10
+        n=n//10 #123//10
     return total    
 print(product(123))
+
+def pow(a,b):
+    if b==0:
+        return 1
+    return a*pow(a,b-1)
+print(pow(2,3))
