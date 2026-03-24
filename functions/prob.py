@@ -14,4 +14,10 @@ lst=[2,3,2,4,4]
 result =0
 for i in lst:
     result=result^i
-print(result)        
+print(result) 
+
+lst=[5,1,2,1,2]
+result=0
+for i in lst:
+    result ^=i
+print(result)    
