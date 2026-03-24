@@ -7,5 +7,11 @@ else:
 for i in range(1,6):
     if i &1:
         print(i,"odd") 
-else:
-    print(i, "even")     
+    else:
+        print(i, "even")   
+
+lst=[2,3,2,4,4]
+result =0
+for i in lst:
+    result=result^i
+print(result)        
