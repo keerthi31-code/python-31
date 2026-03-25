@@ -19,5 +19,25 @@ print(result)
 lst=[5,1,2,1,2]
 result=0
 for i in lst:
-    result ^=i
+    result ^=i #XOR
 print(result)    
+
+#Input: "GeeksforGeeks"
+# Output: ['G', 'e', 'k', 's']
+# Try to print the characters which are present more than
+# one time in a given string
+
+s="geeksforgeeks"
+lst=[]
+for ch in s:
+    if s.count(ch)>1 and ch not in lst:
+        lst.append(ch)
+print(lst)
+
+s="GEEKFORGEEKS"
+lst=[]
+for ch in s:
+    if s.count(ch)>1 and ch.lower() not in lst:
+        lst.append(ch.lower())
+print(lst)        
+
