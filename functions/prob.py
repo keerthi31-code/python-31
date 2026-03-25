@@ -41,3 +41,8 @@ for ch in s:
         lst.append(ch.lower())
 print(lst)        
 
+s="KEERTHI"
+lst=[]
+for ch in s:
+    lst.append(ch.lower())
+print(lst)    
