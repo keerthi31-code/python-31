@@ -53,4 +53,12 @@ for i in lst:
     num = len(str(i))
     if num %2==0:
         count+=1
-print(count)        
+print(count)   
+
+lst=[12,345,67,890,7654]
+count=0
+for i in lst:
+    num = len(str(i))
+    if num %2!=0:
+        count+=1
+print(count)   
