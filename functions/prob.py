@@ -62,3 +62,10 @@ for i in lst:
     if num %2!=0:
         count+=1
 print(count)   
+
+s="KEERTHI"
+lst=[]
+for ch in s:
+    if s.count(ch)>1 and ch.lower() not in lst:
+        lst.append(ch.lower())
+print(lst) 
