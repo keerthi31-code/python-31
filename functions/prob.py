@@ -69,3 +69,14 @@ for ch in s:
     if s.count(ch)>1 and ch.lower() not in lst:
         lst.append(ch.lower())
 print(lst) 
+
+
+
+def findGCD(nums):
+        a = min(nums)
+        b = max(nums)
+        while b != 0:
+            a, b = b, a % b
+            
+        return a
+print(findGCD([2,7,4,5,10]))
