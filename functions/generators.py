@@ -36,4 +36,13 @@ gen = large_sequence(1000000)
 print(next(gen))
 print(next(gen))
 print(next(gen))
-       
+
+#using next() with generators
+def simple_gen():
+    yield "keerthi"
+    yield "navya"
+    yield "aash"
+gen = simple_gen()
+print(next(gen))    
+print(next(gen))    
+print(next(gen))       
