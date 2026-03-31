@@ -47,4 +47,29 @@ print(next(gen))
 print(next(gen))    
 print(next(gen))    
 
+#When there are no more values to yield,
+# the generator raises a StopIteration exception
+
+
+import sys
+
+lst = [i for i in range(1000)]
+gen = (i for i in range(1000))
+
+print(sys.getsizeof(lst))
+print(sys.getsizeof(gen))
+
+#generator expressions
+#same like list comprehensions, create generators using generator expression with () instead if []
+
+list_com=[x*x for x in range(5)]
+print(list_com)
+
+#generator
+gen_exp=(x*x for x in range(5))
+print(gen_exp)
+print(list(gen_exp)) #its creates a generator
+
+total=sum(x*x for x in range(10))
+print(total)
 
