@@ -94,5 +94,18 @@ def echo_generator():
 gen = echo_generator()
 next(gen) 
 gen.send("hello")
-gen.send("world")         
+gen.send("world")     
+
+#close() method -- stops the generator
+def my_gen():
+    try:
+        yield 1
+        yield 2
+        yield 3
+    finally:
+        print("generator closed")
+gen = my_gen()
+print(next(gen))
+gen.close()
+
 
