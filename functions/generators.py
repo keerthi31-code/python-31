@@ -73,3 +73,26 @@ print(list(gen_exp)) #its creates a generator
 total=sum(x*x for x in range(10))
 print(total)
 
+#fibonacci sequence generator
+# generatoes van be used to create the fibonacci sequence
+def fibonacci():
+    a,b=0,1
+    while True:
+        yield a
+        a,b=b,a+b
+gen=fibonacci()
+for _ in range(10):
+    print(next(gen))
+
+#generator method
+# generator have special methods for advanced control
+# send() method -- to send a value to the generator
+def echo_generator():
+    while True:
+        received = yield
+        print("received:", received) 
+gen = echo_generator()
+next(gen) 
+gen.send("hello")
+gen.send("world")         
+
