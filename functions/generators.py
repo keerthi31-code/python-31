@@ -108,4 +108,16 @@ gen = my_gen()
 print(next(gen))
 gen.close()
 
+def my_gen():
+    try:
+        yield 2
+        yield 3
+    finally:
+        print("generator closed")
+gen = my_gen()
+print(next(gen))
+gen.close()
+
+
+
 
