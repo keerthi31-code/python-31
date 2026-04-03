@@ -33,6 +33,10 @@ def myfunction():
 @changecase
 def function():
     return "i'm good!"
+@changecase
+def other():
+    return "How are you?"
 print(myfunction())
 print(function())
+print(other())
 
