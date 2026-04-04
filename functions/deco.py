@@ -40,3 +40,12 @@ print(myfunction())
 print(function())
 print(other())
 
+# Arguments in the decorated function
+def changecase(func):
+    def myinner(x):
+        return func(x).upper()
+    return myinner
+@changecase
+def myfunction(name):
+    return "hello "+name
+print(myfunction("keerthi"))
