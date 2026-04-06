@@ -49,3 +49,5 @@ def changecase(func):
 def myfunction(name):
     return "hello "+name
 print(myfunction("keerthi"))
+
+

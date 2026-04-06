@@ -65,4 +65,5 @@ outer()  # here str belongs to the outer function
 # sum()
 x="keerthi"
 print(len(x))
-
+x= [1,3,5,6,7,9]
+print(max(x))
