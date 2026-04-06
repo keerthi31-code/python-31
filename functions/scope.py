@@ -67,3 +67,5 @@ x="keerthi"
 print(len(x))
 x= [1,3,5,6,7,9]
 print(max(x))
+print(min(x))
+print(sum(x))
