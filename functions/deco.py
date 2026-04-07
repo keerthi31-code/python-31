@@ -50,4 +50,29 @@ def myfunction(name):
     return "hello "+name
 print(myfunction("keerthi"))
 
+def greet():
+    return "hello"
+def display(func):
+    print(func())
+display(greet)    
 
+def outer():
+    def inner():
+        print("Inside inner function")
+    return inner
+func=outer()
+func()  
+
+#basic decorator structure
+def my_decorator(func):
+    def wrapper():
+        print("before function call")
+        func()
+        print("after function call")
+    return wrapper
+
+# using a decorator 
+def say_hello():
+    print("hello!")
+decorated=my_decorator(say_hello)
+decorated()        
