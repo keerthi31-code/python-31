@@ -76,3 +76,13 @@ def say_hello():
     print("hello!")
 decorated=my_decorator(say_hello)
 decorated()        
+
+# args and kwargs
+def changecase(func):
+    def myinner(*args, **kwargs):
+        return func(*args, **kwargs).upper()
+    return myinner
+@changecase
+def myfunction(nam):
+    return "hello "+nam
+print(myfunction("keerthi"))
