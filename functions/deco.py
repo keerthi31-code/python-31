@@ -100,5 +100,5 @@ def changecase(n):
     return changecase
 @changecase(1)
 def myfunction():
-    return "Hello Keerthi"
-print(myfunction())     
+    return "hello keerthi"
+print(myfunction())   
