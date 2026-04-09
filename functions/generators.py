@@ -118,6 +118,14 @@ gen = my_gen()
 print(next(gen))
 gen.close()
 
+def num(n):
+    for i in range(n):
+        if i%3==0:
+            yield i
+n=int(input("enter the value :"))
+for j in num(n):
+    print(j)
+
 
 
 
