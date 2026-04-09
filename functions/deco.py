@@ -101,4 +101,26 @@ def changecase(n):
 @changecase(1)
 def myfunction():
     return "hello keerthi"
-print(myfunction())   
+print(myfunction()) 
+
+#Multiple Decorators -- can use multiple decorators on one function
+# eg : One decorator for upper case, and one for adding a greeting
+def changecase(func):
+    def myinner():
+        return func().upper()
+    return myinner
+def addgreeting(func):
+    def myinner():
+        return "Hello" + func() + "have a good day!"
+    return myinner
+@changecase
+@addgreeting
+def myfunction():
+    return "keerthi"
+print(myfunction)
+
+#preserving function metadata
+# can be accessed using thr __name__ and __doc__
+def myfunction():
+    return "have a great day!"
+print(myfunction.__name__)
