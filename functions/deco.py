@@ -124,3 +124,24 @@ print(myfunction)
 def myfunction():
     return "have a great day!"
 print(myfunction.__name__)
+
+def decorator(func):
+    def inner():
+        print(func() *2)
+    return inner    
+    
+@decorator 
+def get_number():
+    return 5
+get_number()   
+
+def decorator(func):
+    def inner(a,b):
+        print(func( a, b))
+    return inner
+
+@decorator
+def add(a,b):
+    return a+b
+add(2,3)
+    
