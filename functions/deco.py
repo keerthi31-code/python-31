@@ -143,5 +143,23 @@ def decorator(func):
 @decorator
 def add(a,b):
     return a+b
-add(2,3)
+a,b=map(int,input("enter the nums:").split())
+add(a,b)
     
+#write a decorator to implement square of a number  
+# which was acquired by the 2 func add() & sub() these are outer functions    
+def decorator(func):
+    def inner(a,b):
+        print(func(a,b) **2)
+    return inner
+@decorator
+def add(a,b):
+    return a+b
+@decorator
+def sub(a,b):
+    return a-b
+a,b=map(int,input("enter thr nums:").split())
+add(a,b)
+sub(a,b)
+
+        
