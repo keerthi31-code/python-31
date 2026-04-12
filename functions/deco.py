@@ -162,4 +162,5 @@ a,b=map(int,input("enter thr nums:").split())
 add(a,b)
 sub(a,b)
 
+
         
