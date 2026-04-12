@@ -27,3 +27,13 @@ for i in range(10):
 print(list(range(5)))
 print(list(range(1,6)))
 print(list(range(3,10,2)))
+
+#slicing ranges
+# to extract a subsequence
+r=range(10)
+print(r[2])
+print(list(r[:3]))
+
+x=range(8)
+print(x[6])
+print(list(x[3:]))
