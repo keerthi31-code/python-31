@@ -16,3 +16,14 @@ print(list(x))
 # the 3rd arg represents step
 x=range(3,10,2)
 print(list(x))
+
+#using ranges
+# ranges are often used in for loops 
+for i in range(10):
+    print(i)
+
+# using list to display ranges
+#range is not directly displayed, so range should convert to lists for display
+print(list(range(5)))
+print(list(range(1,6)))
+print(list(range(3,10,2)))
