@@ -37,3 +37,16 @@ print(list(r[:3]))
 x=range(8)
 print(x[6])
 print(list(x[3:]))
+
+#membership testing
+#ranges support membership testing with the 'in' operator
+x=range(0,10,2)
+print(6 in x) # returns True
+print(7 in x) #returns False
+
+#length
+#ranges support len() to get the no. of elements in range
+
+x=range(0,10,2)
+print(list(x))
+print(len(x))
