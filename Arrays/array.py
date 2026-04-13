@@ -10,3 +10,36 @@ print(cars)
 names=["keerthi","navya","aashritha","mansa","sriya"]
 names[1]="choti"
 print(names)
+
+#length of an array
+# use len() menthod to return the length of array
+x=len(cars)
+y=len(names)
+print(x)
+print(y)
+
+#looping array elements
+# for in loop tp loop through the elemnets of an array
+for x in cars:
+    print(x)
+for y in names:
+    print(y)
+
+#adding array elements
+#append()
+
+cars.append("honda")
+print(cars)
+names.append("navya")
+print(names)
+
+# remove array elements -- using pop()
+cars.pop(1)
+print(cars)
+
+names.pop(5)
+print(names)
+# remove also used for remove an element
+names.remove("mansa")
+print(names)
+
