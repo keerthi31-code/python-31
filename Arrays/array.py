@@ -43,3 +43,5 @@ print(names)
 names.remove("mansa")
 print(names)
 
+names.remove("keerthi")
+print(names)
