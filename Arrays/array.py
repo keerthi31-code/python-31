@@ -45,3 +45,5 @@ print(names)
 
 names.remove("keerthi")
 print(names)
+cars.remove("BMW")
+print(cars)
