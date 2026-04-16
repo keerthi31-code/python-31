@@ -35,6 +35,7 @@ print(names)
 
 # remove array elements -- using pop()
 cars.pop(1)
+cars.pop(2)
 print(cars)
 
 names.pop(5)
