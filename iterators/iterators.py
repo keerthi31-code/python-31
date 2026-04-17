@@ -25,3 +25,8 @@ print(next(myit))
 mystr="keerthi"
 myit=iter(mystr)
 print(next(myit))
+
+#looping through an interator
+mytuple=("keerthi","navya","choti")
+for x in mytuple:
+    print(x)
