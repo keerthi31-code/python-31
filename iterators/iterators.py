@@ -30,3 +30,8 @@ print(next(myit))
 mytuple=("keerthi","navya","choti")
 for x in mytuple:
     print(x)
+
+mytuple=[1,2,3,4,5,6]
+for x in mytuple:
+    print(x)
+
