@@ -35,3 +35,7 @@ mytuple=[1,2,3,4,5,6]
 for x in mytuple:
     print(x)
 
+mytuple=["keerthi",20,"Python"]  
+for x in mytuple:
+    print(x)  
+
