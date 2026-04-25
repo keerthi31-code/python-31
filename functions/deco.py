@@ -162,12 +162,20 @@ a,b=map(int,input("enter thr nums:").split())
 add(a,b)
 sub(a,b)
 
-def titleToNumber(columnTitle):
-        result = 0
-        
-        for ch in columnTitle:
-            value = ord(ch) - ord('A') + 1
-            result = result * 26 + value
-        
-        return result
-        
+def decorator(func):
+    def inner(a,b):
+        print(func(a,b) **2)
+    return inner
+@decorator
+def add(a,b):
+    return a+b
+@decorator
+def sub(a,b):
+    return a-b
+@decorator
+def mul(a,b):
+    return a*b    
+a,b=map(int,input("enter thr nums:").split())
+add(a,b)
+sub(a,b)
+
