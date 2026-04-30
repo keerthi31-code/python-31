@@ -17,3 +17,13 @@ d1=developer()
 d1.details()
 d1.coding()
 
+class animal:
+    def features(self):
+        print("Animal")
+class dog(animal):
+    def bark(self):
+        print("BOW BOW")
+        print("4 legs")
+d1=dog()
+d1.features()    
+d1.bark()            
