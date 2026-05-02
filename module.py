@@ -31,3 +31,14 @@ print(x)
 import platform
 x=dir(platform)
 print(x)
+
+# imprt from module -- we can choose to import only parts from a module , by using from keyword
+def greeting(name):
+    print("hello, " + name )
+person2={
+    "name":"keerthi",
+    "age":25,
+    "country":"India"
+}  
+from module import person1
+print(person2["age"])  
