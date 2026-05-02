@@ -15,3 +15,12 @@ print(x.strftime("%A")) # returns the day of week
 import datetime
 x=datetime.datetime(2026,5,2)
 print(x)
+
+#the strftime() method
+# the datetime object has a method for formatting date objects into readable strings
+import datetime
+x=datetime.datetime(2026,5,2)
+print(x.strftime("%B")) # returns month name
+
+
+
