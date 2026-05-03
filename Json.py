@@ -27,7 +27,7 @@ print(y)
 #dict, list, tuple, string, int, float, true, false,nons
 import json
 
-print(json.dumps({"name": "John", "age": 30}))
+print(json.dumps({"name": "keerthi", "age": 21}))
 print(json.dumps(["apple", "bananas"]))
 print(json.dumps(("apple", "bananas")))
 print(json.dumps("hello"))
@@ -36,3 +36,19 @@ print(json.dumps(31.76))
 print(json.dumps(True))
 print(json.dumps(False))
 print(json.dumps(None))
+
+# converting a python object containing all legal data types
+import json
+x={
+    "name":"keerthi",
+    "age":21,
+    "married":False,
+    "pets":None,
+     "cars": [
+        {"model": "BMW 230", "mpg": 27.5},
+        {"model": "Ford Edge", "mpg": 24.1}
+    ]
+}
+
+#order the result
+print(json.dumps(x, indent=4, sort_keys=True))
