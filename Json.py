@@ -52,3 +52,44 @@ x={
 
 #order the result
 print(json.dumps(x, indent=4, sort_keys=True))
+
+#problems 
+import json 
+x={
+    "name":"john",
+    "age":21
+}
+x=json.dumps(x)
+print(x)
+
+
+
+import json
+x='{"city":"Hyderabad","pincode":500001}'
+y=json.loads(x)
+print(y)
+
+import json
+x={"name":"keerthi","age":21}
+print(x["age"])
+
+import json
+x={"course":"python","duration":"6 months"}
+with open("x.json","w") as file:
+    json.dump(x, file)
+print("data written successfully")    
+
+import json
+y={
+    "name":"keerthi",
+    "age":21,
+    "course":"python"
+}
+#write
+with open("y.json","w") as file:
+    json.dump(y, file, indent=4)
+#read    
+with open("y.json","r") as file:
+    y=json.load(file)
+for keys in y:    
+    print(keys) 
