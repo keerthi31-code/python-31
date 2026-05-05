@@ -83,3 +83,46 @@ c1=child1()
 c1.father()
 c2=child2()
 c2.father()
+
+## 5/may
+class animal:
+    def sound(self):
+        print("Animal makes sound")
+class dog(animal):
+    def Dog(self):
+        print("BOW BOW") 
+d1=dog()
+d1.sound() 
+d1.Dog()
+
+# method overriding same method in parent class and child class
+class Bird:
+    def fly(self):
+        print("Bird can fly")
+class parrot(Bird):
+    def fly(self):
+        print("Parrot can fly high")
+p1=parrot()
+p1.fly()            
+
+
+class person:
+    def __init__(self,name):
+        self.name=name
+
+class student(person):
+    def display(self):
+        print("student name is", self.name)
+s1=student("keerthi")
+s1.display()   
+
+class vehicle:
+    def start(self):
+        print("Vehicle started")
+class Bike(vehicle):
+    pass
+b1=Bike()
+b1.start()        
+
+                
+
