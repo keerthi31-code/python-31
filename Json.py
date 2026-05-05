@@ -99,9 +99,23 @@ import json
 x={
     "student":{
         "name":"keerthi",
-        "marks":[80,90,85]
+        "marks":[80,90,85],
+
     }
 }
 marks=x["student"]["marks"]
 avg=sum(marks)/len(marks)
 print(avg)
+x["student"]["grade"]="A"
+print(x["student"]["grade"])
+
+import json
+students=[
+    {"name":"A","age":20},
+    {"name":"B","age":21}
+]
+with open ("students.json","w") as file:
+    json.dump(students, file, indent=4 )
+with open ("students.json","r") as file:  
+    students=json.load(file)
+print("data stored")    
