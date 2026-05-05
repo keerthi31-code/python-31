@@ -93,3 +93,15 @@ with open("y.json","r") as file:
     y=json.load(file)
 for keys in y:    
     print(keys) 
+
+# standard level
+import json
+x={
+    "student":{
+        "name":"keerthi",
+        "marks":[80,90,85]
+    }
+}
+marks=x["student"]["marks"]
+avg=sum(marks)/len(marks)
+print(avg)
