@@ -120,7 +120,7 @@ class vehicle:
     def start(self):
         print("Vehicle started")
 class Bike(vehicle):
-    pass
+    pass  # here we reusing the parent class without changing anything
 b1=Bike()
 b1.start()        
 
