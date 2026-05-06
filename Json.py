@@ -121,7 +121,7 @@ with open ("students.json","r") as file:
     students=json.load(file)
 for i in students:
     if i["age"]>21:
-        print(i)    
+        print(i["name"])    
 
 
 print(len(students))   
