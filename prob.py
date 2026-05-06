@@ -85,6 +85,7 @@ c2=child2()
 c2.father()
 
 ## 5/may
+#1st -- basic inheritance
 class animal:
     def sound(self):
         print("Animal makes sound")
@@ -94,7 +95,7 @@ class dog(animal):
 d1=dog()
 d1.sound() 
 d1.Dog()
-
+#2nd
 # method overriding same method in parent class and child class
 class Bird:
     def fly(self):
@@ -105,7 +106,7 @@ class parrot(Bird):
 p1=parrot()
 p1.fly()            
 
-
+#3rd -- 
 class person:
     def __init__(self,name):
         self.name=name
@@ -115,7 +116,7 @@ class student(person):
         print("student name is", self.name)
 s1=student("keerthi")
 s1.display()   
-
+# 4th
 class vehicle:
     def start(self):
         print("Vehicle started")

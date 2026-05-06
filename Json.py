@@ -118,5 +118,6 @@ with open ("students.json","w") as file:
     json.dump(students, file, indent=4 )
 with open ("students.json","r") as file:  
     students=json.load(file)
+print(len(students))   
 print("data stored")    
 
