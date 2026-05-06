@@ -112,12 +112,18 @@ print(x["student"]["grade"])
 import json
 students=[
     {"name":"A","age":20},
-    {"name":"B","age":21}
+    {"name":"B","age":22},
+    {"name":"c","age":24}
 ]
 with open ("students.json","w") as file:
     json.dump(students, file, indent=4 )
 with open ("students.json","r") as file:  
     students=json.load(file)
+for i in students:
+    if i["age"]>21:
+        print(i)    
+
+
 print(len(students))   
-print("data stored")    
+print("data stored") 
 
