@@ -152,6 +152,30 @@ c1.sound()
 d1=dog()
 d1.sound()
 
+# Abstract method
+from abc import ABC, abstractmethod
+class area(ABC):
+    @abstractmethod
+    def shape(self):
+        print("Area")
+class circle(area):
+    def shape(self):
+        r=2
+        print(3.14*r*r)
+class rectangle(area):
+    def shape(self):
+        l=4
+        b=5
+        print(l*b)
+r1=rectangle()
+r1.shape()
+c1=circle()
+c1.shape()
+
+
+
+
+
 
             
 
