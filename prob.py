@@ -131,7 +131,7 @@ class employee:
         self.name=name
 class developer(employee):
     def __init__(self,name,prog_lang):
-        super().__init__(name) 
+        super().__init__(name) # calls the parent class
         self.prog_lang=prog_lang
 d1=developer("keerthi", "python")
 print(d1.name)
@@ -189,6 +189,7 @@ b1.start()
 c1=car()
 c1.start()
 v=vehicle()
+v.start()
            
 
 
