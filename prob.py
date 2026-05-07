@@ -125,5 +125,34 @@ class Bike(vehicle):
 b1=Bike()
 b1.start()        
 
-                
+#06/may
+class employee:
+    def __init__(self,name):
+        self.name=name
+class developer(employee):
+    def __init__(self,name,prog_lang):
+        super().__init__(name)
+        self.prog_lang=prog_lang
+d1=developer("keerthi", "python")
+print(d1.name)
+print(d1.prog_lang)      
+
+class animal:
+    def shout(self):
+        print("animal is shouting")
+class dog(animal):
+    def sound(self):
+        print("BOW")
+class cat(animal):
+    def sound(self):
+        print("MEOW")  
+c1=cat()
+c1.shout()
+c1.sound()
+d1=dog()
+d1.sound()
+
+
+            
+
 
