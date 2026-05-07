@@ -173,6 +173,25 @@ c1=circle()
 c1.shape()
 
 
+from abc import ABC, abstractmethod
+class vehicle(ABC):
+    @abstractmethod
+    def start(self):
+        print("vehicle")
+class car(vehicle):
+    def start(self):
+        print("i'm car")
+class bike(vehicle):
+    def start(self):
+        print("i'm bike")    
+b1=bike()
+b1.start()
+c1=car()
+c1.start()
+v=vehicle()
+
+
+
 
 
 
