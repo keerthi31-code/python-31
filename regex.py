@@ -19,6 +19,14 @@ $--  must end with--"Spain".
 """
 
 
+#findall() re.findall(pattern, string)-what we want to search, where we want to search
+import re
+txt="The rain in Spain"
+x=re.findall("ai",txt)
+print(x) # ['ai','ai'] appears due to python finds 2 matches
+#findall() always returns a list
 
-
- 
+import re
+txt="My numbers are 9876 and 1234"
+x=re.findall("\d",txt)
+print(x)
