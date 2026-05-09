@@ -30,3 +30,9 @@ import re
 txt="My numbers are 9876 and 1234"
 x=re.findall("\d",txt)
 print(x)
+
+#search() -- searches the string for a match
+import re
+txt="The rain in Spain"
+x=re.search("\s",txt) # \s means any wjite space character
+print(x)
