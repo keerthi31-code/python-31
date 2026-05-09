@@ -36,3 +36,14 @@ import re
 txt="The rain in Spain"
 x=re.search("\s",txt) # \s means any wjite space character
 print(x)
+
+#split() -- split function splits a string when ever a match is found
+import re
+txt="The rain in Spain"
+x=re.split("\s",txt)
+print(x)
+
+import re
+txt="apple,banana,mango"
+x=re.split(",",txt)
+print(x)
