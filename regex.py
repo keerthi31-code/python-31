@@ -47,3 +47,10 @@ import re
 txt="apple,banana,mango"
 x=re.split(",",txt)
 print(x)
+
+# sub() -- is used to replace matched text with another value
+# syntax -- re.sub(pattern, replacement, string)
+import re
+txt="The rain in Spain"
+x=re.sub("\s","9",txt)
+print(x)
