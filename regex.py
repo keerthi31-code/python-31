@@ -52,5 +52,17 @@ print(x)
 # syntax -- re.sub(pattern, replacement, string)
 import re
 txt="The rain in Spain"
-x=re.sub("\s","9",txt)
+x=re.sub("\s","9",txt)  # \s means any white space character so it is replaced by 9
+print(x)
+
+import re
+txt="I like apples"
+x=re.sub("apples","mangoes",txt)
+print(x)
+
+#count Parameter -- can limit how many replacements happen
+# re.sub(pattern, replacement, string, count)
+import re
+txt="The rain in Spain"
+x=re.sub("\s","9",txt,2)
 print(x)
