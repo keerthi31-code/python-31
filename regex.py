@@ -34,7 +34,7 @@ print(x)
 #search() -- searches the string for a match
 import re
 txt="The rain in Spain"
-x=re.search("\s",txt) # \s means any wjite space character
+x=re.search("\s",txt) # \s means any write space character
 print(x)
 
 #split() -- split function splits a string when ever a match is found
@@ -71,3 +71,22 @@ import re
 txt="My number is 1234"
 x=re.sub("\d","*",txt)
 print(x)
+
+# findall()-- find all matches
+#search()-- fibd firdt matches
+#split()-- split string
+#sub()-- replace matches
+
+
+#metacharacters in regex -- special characters that have spcl meaning in regEx
+# ^-- start with
+# $-- ends with
+# .-- any character
+# *-- zero or more occurance
+# +-- one or more
+# ? zero or one
+# {} -- exact number
+# [] -- set of characters
+# ()-- grouping
+
+
