@@ -89,4 +89,19 @@ print(x)
 # [] -- set of characters
 # ()-- grouping
 
+# special sequences in RegEx
+# \ (backslash)
+'''
+\d digit(0-9)
+\D Not a digit
+\s white space
+\S Not whitespace
+\w word character
+\W Not a word character
+\b word boundary
+\B Not word boundary
+\A start of string
+\z end of str
+r means raw str
 
+'''
