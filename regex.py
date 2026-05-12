@@ -121,13 +121,30 @@ txt="Hello"
 x=re.findall("[a-z]",txt) # any lowercase letter from a to z
 
 print(x)
-
+#upper + lower case
 import re
 txt="Hello123"
 x=re.findall("[a-zA-Z]",txt)
 print(x)
-
+# digit range
 import re
 txt="abc123"
 x=re.findall("[0-9]",txt)
+print(x)
+
+# multiple ranges together
+import re
+txt = "Python123@"
+x = re.findall("[a-zA-Z0-9]", txt)
+print(x)
+
+# Negation using--^
+import re
+txt = "apple123"
+x = re.findall("[^0-9]", txt) # match every thing except the digits
+print(x)
+
+import re
+txt = "apple"
+x = re.findall("[^aeiou]", txt)
 print(x)
