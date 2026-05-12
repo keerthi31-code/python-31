@@ -105,3 +105,29 @@ print(x)
 r means raw str
 
 '''
+# sets[] in RegEx
+'''
+a set means match ONE character from inside the brackets
+[abc] match either a,b,c ONLY ONE character at time
+
+'''
+import re
+txt='apple'
+x=re.findall("[ap]",txt)
+print(x)
+
+import re
+txt="Hello"
+x=re.findall("[a-z]",txt) # any lowercase letter from a to z
+
+print(x)
+
+import re
+txt="Hello123"
+x=re.findall("[a-zA-Z]",txt)
+print(x)
+
+import re
+txt="abc123"
+x=re.findall("[0-9]",txt)
+print(x)
