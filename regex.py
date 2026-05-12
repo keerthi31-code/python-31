@@ -158,6 +158,11 @@ print(x)
 #special characters inside sets
 import re
 txt = "10 + 20 * 30"
-x = re.findall("[+]", txt) 
+x = re.findall("[+]", txt) # returns plus sign
 print(x)
 
+#two digit pattern
+import re
+txt="age:45,21,6"
+x=re.findall("[0-9][0-9]",txt)
+print(x)
