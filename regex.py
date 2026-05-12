@@ -146,5 +146,18 @@ print(x)
 
 import re
 txt = "apple"
-x = re.findall("[^aeiou]", txt)
+x = re.findall("[^aeiou]", txt) # except vowels
 print(x)
+
+#Exact charaters
+import re
+txt = "cat bat rat"
+x = re.findall("[cr]at", txt) # c OR r
+print(x)
+
+#special characters inside sets
+import re
+txt = "10 + 20 * 30"
+x = re.findall("[+]", txt) 
+print(x)
+
