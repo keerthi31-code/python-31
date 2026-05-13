@@ -245,3 +245,13 @@ import re
 txt = "The rain in Spain"
 x = re.search("ai", txt)
 print(x.string)
+
+
+import re
+txt = "My number is 9876"
+x = re.search(r"\d", txt)
+print("Matched value:", x.group())
+print("Start index:", x.start())
+print("End index:", x.end())
+print("Span:", x.span())
+print("Original string:", x.string)
