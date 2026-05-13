@@ -196,9 +196,52 @@ x=re.findall("^world",txt) # it checks whether str starts with world but it chec
 print(x)
 # 3. re.DOTALL(re.S)
 import re
-
 txt = "Hello\nWorld"
-
 x = re.search("Hello.World", txt)
-
 print(x)
+
+# 4. re.VERBOSE(re.X)
+# used for writing readable complex RegEx
+import re
+
+pattern = r"""
+\d+     # one or more digits
+"""
+txt = "Age is 25"
+x = re.findall(pattern, txt, re.VERBOSE)
+print(x)
+
+# match objects Methods -- re.search() finds a match, it returns a:
+import re
+txt = "The rain in Spain"
+x = re.search("ai", txt)
+print(x)
+# group() -- returns the exact matched value -- search only fsrt match
+import re
+txt="The rain in Spain"
+x=re.search("ai", txt)
+print(x.group())
+
+# start() -- returns starting index of match
+import re
+txt="The rain in Spain"
+x= re.search("ai",txt)
+print(x.start())
+
+#end() --returns ending position
+import re
+txt="The rain in Spain"
+x=re.search("ai",txt) # end position is exclusive
+print(x.end())
+
+#span() returns both start and end
+import re
+txt = "The rain in Spain"
+x = re.search("ai", txt)
+print(x.span())
+
+#string -- returns original string
+import re
+txt = "The rain in Spain"
+x = re.search("ai", txt)
+print(x.string)
