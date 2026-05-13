@@ -138,7 +138,7 @@ txt = "Python123@"
 x = re.findall("[a-zA-Z0-9]", txt)
 print(x)
 
-# Negation using--^
+# Negation using-- ^ excluding characters
 import re
 txt = "apple123"
 x = re.findall("[^0-9]", txt) # match every thing except the digits
@@ -164,5 +164,41 @@ print(x)
 #two digit pattern
 import re
 txt="age:45,21,6"
-x=re.findall("[0-9][0-9]",txt)
+x=re.findall("[0-9][0-9]",txt) # prints exactly 2 digits
+print(x)
+
+'''
+sets are used when 
+multiple choices are allowed
+ranges are needed
+exclusions are needed
+'''
+
+# flags in RegEX -- flags change the behaviour of regular expression
+# re.function(pattern, string, flag)
+# 1. re.IGNORECASE (re.I) --- most used flag , RegEx is case sensitive so Hello not equals to hello
+import re
+txt="Hello World"
+x=re.search("hello",txt) # H is diff from h so it returns none
+print(x)
+
+import re
+txt="Hello World"
+x=re.search("hello",txt, re.IGNORECASE) # returns match why because it ignores upper and lower case differences
+x=re.search("world",txt,re.I)
+print(x)
+
+# 2. re.MULTILINE (re.M)
+# problem without MULTILINE ^ AND $ normally work on the entire string only
+import re
+txt="Hello$World"
+x=re.findall("^world",txt) # it checks whether str starts with world but it checks the whole str so match
+print(x)
+# 3. re.DOTALL(re.S)
+import re
+
+txt = "Hello\nWorld"
+
+x = re.search("Hello.World", txt)
+
 print(x)
