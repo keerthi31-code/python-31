@@ -193,6 +193,7 @@ c1.shape()
            
 # polymorphism
 # create a parent class animal having sound as a method, child class dog having as a method
+#  -- method overriding having same method but behave differently depend on object
 class animal:
     def sound(self):
         print("animal makes sound")
@@ -205,4 +206,23 @@ a.sound()
 d=dog()
 d.sound()        
 
+
+# p-employ, ch- developer, ch- manager classes---work method
+class employee:
+    def work(self):
+        print("im employee")
+class developer(employee):
+    def work(self):
+        print("works on code")
+class manager(employee):
+    def work(self):
+        print("manages team")
+ma=manager()
+e=employee()
+d=developer()
+ma.work()
+e.work()
+d.work()                        
+
+#p-payment, ch-upi, ch-card---method=pay(self, amnt)
 
