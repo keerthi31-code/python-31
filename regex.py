@@ -255,3 +255,12 @@ print("Start index:", x.start())
 print("End index:", x.end())
 print("Span:", x.span())
 print("Original string:", x.string)
+
+import re
+txt = "my name is keerthi1234"
+x = re.search(r"\d", txt)
+print("Matched value:", x.group())
+print("Start index:", x.start())
+print("End index:", x.end())
+print("Span:", x.span())
+print("Original string:", x.string)
