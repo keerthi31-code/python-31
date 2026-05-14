@@ -226,3 +226,21 @@ d.work()
 
 #p-payment, ch-upi, ch-card---method=pay(self, amnt)
 
+class payment:
+    def pay(self, amount):
+        print("payment processing")
+class upi(payment):
+    def pay(self, amount):
+        print("paid by upi", amount)
+class card(payment):
+    def pay(self, amount):
+        print("paid by card", amount)
+c=card()
+u=upi()
+p=payment()
+p.pay(500)
+c.pay(5000)
+u.pay(1000)        
+
+
+
