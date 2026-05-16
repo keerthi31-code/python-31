@@ -246,3 +246,21 @@ u.pay(1000)
 
 
 
+#Create a base class Animal.Subclasses:
+# Dog Cat Each class should implement: sound method()
+# Expected:Dog → "Bark"Cat → "Meow"
+class animal:
+    def sound(self):
+        print("Animal makes sound")
+class dog(animal):
+    def sound(self):
+        print("Bark")
+class cat(animal):
+    def sound (self):
+        print("Meow")       
+c=cat()
+d=dog()
+a=animal()
+c.sound()
+d.sound()
+a.sound()
