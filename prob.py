@@ -299,4 +299,31 @@ m.calculate_salary()
 d.calculate_salary()
 i.calculate_salary()
             
-        
+#Create abstract class:Shape ,Abstract method:area()
+#  Subclasses:Circle, Rectangle, Triangle Calculate respective areas.
+from abc import ABC, abstractmethod
+class shape:
+    @abstractmethod
+    def area(self):
+        print("Area of shape")
+class circle(shape):
+    def area(Self):
+        r=2
+        print(3.14*r*r)
+class rectangle(shape):
+    def area(self):
+        l=4
+        b=5
+        print(l*b)
+class triangle(shape):
+    def area(self):
+        b=3 
+        h=5
+        print(b*h)
+
+t=triangle()
+r=rectangle()
+c=circle()
+t.area()
+r.area()
+c.area()                    
