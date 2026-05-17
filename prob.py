@@ -265,4 +265,38 @@ c.sound()
 d.sound()
 a.sound()
 
-
+#Create base class:Employee
+# Subclasses:Manager Developer Intern 
+# Each employee has: name salary 
+# Manager gets bonus salary. 
+# Developer gets project allowance.
+# Intern gets stipend.
+class Employee:
+    def __init__(self ,name, salary):
+        self.name=name
+        self.salary=salary
+    def calculate_salary(self):    
+        print("Employee",self.salary)
+class manager(Employee):
+    def calculate_salary(self):
+        bonus=20000
+        total=self.salary+bonus
+        print(self.name, "Manager salary:",total)
+class developer(Employee):
+    def calculate_salary(self):
+        allowance=10000
+        total=self.salary+allowance
+        print(self.name, "Developer salary:", total)
+class intern(Employee):
+    def calculate_salary(self):
+        stipend=5000
+        total=self.salary+stipend
+        print(self.name, "Intern salary:", total)
+m=manager("keerthi", 40000)
+d=developer("navya",35000)
+i=intern("lavanya",15000)                
+m.calculate_salary()
+d.calculate_salary()
+i.calculate_salary()
+            
+        
