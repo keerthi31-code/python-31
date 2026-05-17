@@ -319,7 +319,7 @@ class triangle(shape):
     def area(self):
         b=3 
         h=5
-        print(b*h)
+        print((b*h)/2)
 
 t=triangle()
 r=rectangle()
