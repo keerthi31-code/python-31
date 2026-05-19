@@ -357,3 +357,45 @@ b1.calculate_rent()
 b.calculate_rent()
      
 
+#Create abstract class:Payment
+# Subclasses:CreditCard Payment,UPI Payment,Wallet Payment,
+# Each should implement:pay(amount)
+# Use polymorphism to process payments.
+
+
+from abc import ABC, abstractmethod
+
+class Payment(ABC):
+
+    @abstractmethod
+    def pay(self, amount):
+        pass
+
+
+class CreditCardPayment(Payment):
+
+    def pay(self, amount):
+        print("Credit Card Payment:", amount)
+
+
+class UPIPayment(Payment):
+
+    def pay(self, amount):
+        print("UPI Payment:", amount)
+
+
+class WalletPayment(Payment):
+
+    def pay(self, amount):
+        print("Wallet Payment:", amount)
+
+
+c1 = CreditCardPayment()
+u1 = UPIPayment()
+w1 = WalletPayment()
+
+c1.pay(1000)
+u1.pay(500)
+w1.pay(300)
+    
+
