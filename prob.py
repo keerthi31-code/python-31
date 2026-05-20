@@ -371,25 +371,21 @@ class Payment(ABC):
     def pay(self, amount):
         pass
 
-
 class CreditCardPayment(Payment):
 
     def pay(self, amount):
         print("Credit Card Payment:", amount)
-
 
 class UPIPayment(Payment):
 
     def pay(self, amount):
         print("UPI Payment:", amount)
 
-
 class WalletPayment(Payment):
 
     def pay(self, amount):
         print("Wallet Payment:", amount)
-
-
+        
 c1 = CreditCardPayment()
 u1 = UPIPayment()
 w1 = WalletPayment()
@@ -398,4 +394,9 @@ c1.pay(1000)
 u1.pay(500)
 w1.pay(300)
     
+#Create base class:Account 
+# Subclasses:SavingsAccount, CurrentAccount, 
+# Functions:deposit() withdraw() 
+# Savings account gives interest. 
+# Current account has minimum balance rule    
 
