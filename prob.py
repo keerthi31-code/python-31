@@ -400,3 +400,28 @@ w1.pay(300)
 # Savings account gives interest. 
 # Current account has minimum balance rule    
 
+class Student:
+    def __init__(self ,name, marks):
+        self.name=name
+        self.marks=marks
+    def display(self):
+        print("name:", self.name, "marks:", self.marks)
+class student1(Student):
+    def display(self):
+        print(self.name, self.marks)
+class student2(Student):
+    def display(self):
+        print(self.name, self.marks)
+class student3(Student):
+    def display(self):
+        print(self.name, self.marks)
+s1=student1("keerthi", 90) 
+s1.display()                  
+s2=student2("navya", 85)
+s2.display()
+s3=student3("lavanya", 79)
+s3.display()            
+
+
+
+        
