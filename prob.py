@@ -435,4 +435,22 @@ r=Rectangle()
 r.area()
 r.parimeter()
 
+
+
+class Mobile:
+    def __init__(self, brand, price, color):
+        self.brand=brand
+        self.price=price
+        self.color=color
+    def display(self):    
+        print("Brand:",self.brand)
+        print("Price:",self.price)
+        print("Color:",self.color)
+m1=Mobile("VIVO",25000, "Blue")
+m1.display()    
+
+    
+
+
+
         
