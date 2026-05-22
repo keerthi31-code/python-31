@@ -400,6 +400,7 @@ w1.pay(300)
 # Savings account gives interest. 
 # Current account has minimum balance rule    
 
+# 23/5/26
 class Student:
     def __init__(self ,name, marks):
         self.name=name
@@ -423,5 +424,15 @@ s3=student3("lavanya", 79)
 s3.display()            
 
 
+class Rectangle:
+    l=10
+    b=25
+    def area(self):
+        print("Area:", self.l * self.b)        
+    def parimeter(self):   
+        print("parimeter:", (2*(self.l+ self.b)))
+r=Rectangle()
+r.area()
+r.parimeter()
 
         
