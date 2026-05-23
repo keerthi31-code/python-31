@@ -400,9 +400,9 @@ w1.pay(300)
 # Savings account gives interest. 
 # Current account has minimum balance rule    
 '''
-Encapsulation: wrappinf data and methods together inside a class and restrictng direct access to same data
-hide internak details
-allo access only through controlled methods
+Encapsulation: wrapping data and methods together inside a class and restrictng direct access to same data
+hide internal details
+allow access only through controlled methods
 eg: ATM machine
 You cannot directly access bank balance from inside the machine.
 You interact using:
@@ -566,6 +566,36 @@ class Car:
 c=Car("Ford","Mustang",1964)
 c.car_info()           
 
+class ATM:
+    def __init__(self, name, balance):
+        self.name=name
+        self.__balance=balance
+    def deposit(self, amount):
+        self.__balance+=amount
+        print("Deposit",amount)
+    def withdraw(self, amount):
+        if amount > self.__balance:
+            print("Insufficinet")
+        else:
+            self.__balance-=amount
+            print("withdraw:", amount)
+    def check_balance(self):
+        print("checkBalace:",self.__balance)
+a=ATM("Keerthi",10000)
+a.deposit(2000)
+a.withdraw(3000)
+a.check_balance()                    
+    
+class PasswordManager:
+    def __init__(self, password):
+        self.__password=password
+    def set_password(self, new_password):
+        self.__password=new_password
+        print("password updated")  
+    def get_password(self):
+        print("get password:",self.__password)
 
+p= PasswordManager(3120)
+p.set_password(2004)
+p.get_password()           
 
-        
