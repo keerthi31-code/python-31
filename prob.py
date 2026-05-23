@@ -450,6 +450,35 @@ m1=Mobile("VIVO",25000, "Blue")
 m1.display()    
 
     
+class Employee:
+    def __init__(self, id, name, salary):
+        self.id=id
+        self.name=name
+        self.salary=salary
+    def display(self):
+        print("ID:",self.id, "\nName:", self.name, "\nSalary:", self.salary) 
+e=Employee("k41","keerthi",75000)   
+e.display()   
+
+
+class BankAccount:
+    def __init__(self, name, balance):
+        self.name=name
+        self.balance=balance
+        balance=4000
+    def deposit(self):
+        deposited_amount=2000
+        self.balance=self.balance+deposited_amount
+    def withdraw(self):
+        withdraw_amount=1000
+        self.balance=self.balance-withdraw_amount
+    def checkbalance(self):
+        print("Balance:",self.balance)
+b=BankAccount("keerthi",4000)  
+b.deposit()
+b.withdraw()
+b.checkbalance()      
+
 
 
 
