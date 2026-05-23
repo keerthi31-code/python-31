@@ -399,6 +399,83 @@ w1.pay(300)
 # Functions:deposit() withdraw() 
 # Savings account gives interest. 
 # Current account has minimum balance rule    
+'''
+Encapsulation: wrappinf data and methods together inside a class and restrictng direct access to same data
+hide internak details
+allo access only through controlled methods
+eg: ATM machine
+You cannot directly access bank balance from inside the machine.
+You interact using:
+PIN
+deposit()
+withdraw()
+check_balance()
+This is encapsulation.
+
+Type	Syntax	Meaning
+Public	----  name	--Accessible anywhere
+Protected--	 _name	--Should not be accessed directly
+Private--	__name	--Strongly restricted
+'''
+# public variable
+class student:
+    def __init__(self):
+        self.name="Keerthi"
+s=student()
+print(s.name)        
+
+#private variables (__variable)
+class BankAccount:
+    def __init__(self, name, balance):
+        self.name=name
+        self.__balance=balance
+    def show_balance(self):
+        print("Name:", self.name, "Balance:", self.__balance)
+acc=BankAccount("keerthi",10000)
+acc.show_balance()
+
+
+class Bankaccount:
+    def __init__(self, name, balance):
+        self.name=name
+        self.__balance=balance
+    def deposited_amount(self, amount):
+        self.__balance +=amount 
+        print("Deposited:",amount)
+    def with_draw(self, amount):
+        if amount<=self.__balance:
+            self.__balance-=amount
+            print("Withdraw:" ,amount)
+        else:
+            print("Insufficient balance")
+    def check_balance(self):
+        print("Balance:", self.__balance)
+b=Bankaccount("Keerthi",75000) 
+b.deposited_amount(5000)
+b.with_draw(25000)
+b.check_balance()              
+
+class MobilePin:
+    def __init__(self, pin):
+        self.__pin=pin
+    def checkpin(self, pin):
+        if self.__pin ==pin:
+            print("correct pin")
+        else:
+            print("wrong pin")     
+    def changepin(self,old_pin, new_pin):
+        if self.__pin==old_pin:
+            self.__pin=new_pin
+            print("pin changed successfully")
+        else:
+            print("old pin incorrect")
+m=MobilePin(3120)
+m.checkpin(3120) 
+m.changepin(3120, 2004)
+m.checkpin(8976)               
+
+
+
 
 # 23/5/26
 class Student:
@@ -479,6 +556,15 @@ b.deposit()
 b.withdraw()
 b.checkbalance()      
 
+class Car:
+    def __init__(self, company, model, year):
+        self.company=company
+        self.model=model
+        self.year=year
+    def car_info(self):
+        print("Company:",self.company, "Model:",self.model, "Year:",self.year) 
+c=Car("Ford","Mustang",1964)
+c.car_info()           
 
 
 
