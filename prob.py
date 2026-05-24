@@ -599,3 +599,20 @@ p= PasswordManager(3120)
 p.set_password(2004)
 p.get_password()           
 
+class Test:
+    def __init__(self):
+        print("Constructor called")
+t=Test()
+t.__init__()        
+
+
+class A:
+    
+    def show(self):
+        print("Class A")
+
+class B(A):
+    pass
+
+b = B()
+b.show()
