@@ -29,3 +29,13 @@ except NameError:
     print("Variable x is not defined")
 except:
     print("Something else went wrong")    
+
+
+#Else 
+# Else keyword to define a block of code to be executed if no errors were raised
+try:
+    print("Hello")
+except:
+    print("Something went wrong")
+else:
+    print("Nothing went wrong")        
