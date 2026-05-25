@@ -14,6 +14,18 @@ this exception can be handled using the try statement
 """
 
 try:
-    print(x)
+    print(x) # try block generate an exception , because x is not defined
 except:
     print("An Exception occured")    
+
+#Since the try block raises an error, the except block will be executed.
+#Without the try block, the program will crash and raise an error:
+
+# Many exceptions
+# can define as many exception blocks as wat 
+try:
+    print(x)
+except NameError:
+    print("Variable x is not defined")
+except:
+    print("Something else went wrong")    
