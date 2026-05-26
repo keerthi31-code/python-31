@@ -38,4 +38,34 @@ try:
 except:
     print("Something went wrong")
 else:
-    print("Nothing went wrong")        
+    print("Nothing went wrong") 
+
+
+# Finally -- the finally block, if specified will be executed regardless if the try block raises an error or not
+try:
+    print(x)
+except:
+    print("something went wrong")
+finally:
+    print("the 'try except' os finished'")
+
+try:
+  f = open("demofile.txt")
+  try:
+    f.write("Lorum Ipsum")
+  except:
+    print("Something went wrong when writing to the file")
+  finally:
+    f.close()
+except:
+  print("Something went wrong when opening the file")                       
+
+
+
+
+
+
+
+
+
+
