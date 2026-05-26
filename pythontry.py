@@ -60,10 +60,18 @@ try:
 except:
   print("Something went wrong when opening the file")                       
 
+# Raise an exception
+'''
+As a python developer we can choose to throw an exception if a condition occurs
+to throw an exception, use the raise keyword
+'''
+x=-1
+if x<0:
+   raise Exception("sorry, no numbers below zero")
 
-
-
-
+x="hello"
+if not type(x) is int:
+   raise TypeError("only intergers are allowed")
 
 
 
