@@ -49,4 +49,15 @@ col=2
 for i in range(row):
     for j in range(col):
         c[i][j]=a[i][j]+b[i][j]
-print(c)        
+print(c) 
+
+a=[1,2,3],[4,5,6],[7,8,9]
+b=[9,8,7],[6,5,4],[3,2,1]
+c=[0,0,0],[0,0,0],[0,0,0]
+rows=3
+cols=3
+for i in range(rows):
+    for j in range(cols):
+        c[i][j]=a[i][j]+b[i][j]
+for i in c:
+    print(i)
