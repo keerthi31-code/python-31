@@ -1,3 +1,4 @@
+#add
 a = [[1,2],
     [3,4]] 
 b = [[5,6],
@@ -9,7 +10,7 @@ for i in range(rows):
     for j in range(cols):
         total[i][j]=a[i][j]+b[i][j]
     print(total)    
-
+#sub---------------------------------
 a1=[2,3,4],[5,6,8],[10,11,12]
 b1=[2,3,4],[5,6,8],[10,11,12]
 res=[0,0,0],[0,0,0],[0,0,0]
@@ -19,17 +20,7 @@ for i in range(row):
     for j in range(col):
         res[i][j]=a1[i][j]-b1[i][j]
 print(res)
-
-
-
-
-
-
-
-
-
-
-
+#mul-----------------------------------
 a=[[1,2,3],
    [2,3,4],
    [3,4,5]]
@@ -45,4 +36,17 @@ for i in range(len(a)):          # here len(a) is an row
         for k in range(len(b)):
             row[j]+=a[i][k]*b[k][j]
     result.append(row)
-print(result)            
+print(result)   
+
+
+# Practise
+
+a=[1,2],[3,4]
+b=[5,6],[7,8]
+c=[0,0],[0,0]
+row=2
+col=2
+for i in range(row):
+    for j in range(col):
+        c[i][j]=a[i][j]+b[i][j]
+print(c)        
