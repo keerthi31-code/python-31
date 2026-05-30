@@ -89,3 +89,36 @@ for i in range(rows):
 print("Result: ")
 for row in c:
     print(row)        
+
+
+#subtraction
+a=[]
+b=[]
+rows=int(input("enter rows:"))
+cols=int(input("enter cols:"))
+print("enter matrix A:")
+for i in range(rows):
+    row=[]
+    for j in range(cols):
+        row.append(int(input()))
+    a.append(row)  
+
+print("enter matrix B:")
+for i in range(rows):
+    for j in range(cols):
+        row.append(int(input()))
+    b.append(row) 
+
+c=[]
+for i in range(rows):
+    row=[]
+    for j in range(cols):
+        row.append(a[i][j]-b[i][j])
+    c.append(row)
+print(c)    
+
+
+
+
+
+
