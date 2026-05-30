@@ -61,3 +61,31 @@ for i in range(rows):
         c[i][j]=a[i][j]+b[i][j]
 for i in c:
     print(i)
+
+a=[]
+b=[]
+rows=int(input("enter rows: "))
+cols=int(input("eneter cols: "))
+print("enter matrix A: ")
+for i in range(rows):
+    row=[]
+    for j in range(cols):
+        row.append(int(input()))
+    a.append(row)    
+print(a)
+print("enetr matrix B: ")
+for i in range(rows):
+    row=[]
+    for j in range(cols):
+        row.append(int(input()))
+    b.append(row)
+print(b)
+c=[]
+for i in range(rows):
+    row=[]
+    for j in range(cols):
+        row.append(a[i][j]+b[i][j])
+    c.append(row)
+print("Result: ")
+for row in c:
+    print(row)        
