@@ -62,62 +62,76 @@ for i in range(rows):
 for i in c:
     print(i)
 
-a=[]
-b=[]
-rows=int(input("enter rows: "))
-cols=int(input("eneter cols: "))
-print("enter matrix A: ")
+# a=[]
+# b=[]
+# rows=int(input("enter rows: "))
+# cols=int(input("eneter cols: "))
+# print("enter matrix A: ")
+# for i in range(rows):
+#     row=[]
+#     for j in range(cols):
+#         row.append(int(input()))
+#     a.append(row)    
+# print(a)
+# print("enetr matrix B: ")
+# for i in range(rows):
+#     row=[]
+#     for j in range(cols):
+#         row.append(int(input()))
+#     b.append(row)
+# print(b)
+# c=[]
+# for i in range(rows):
+#     row=[]
+#     for j in range(cols):
+#         row.append(a[i][j]+b[i][j])
+#     c.append(row)
+# print("Result: ")
+# for row in c:
+#     print(row)        
+
+
+# #subtraction
+# a=[]
+# b=[]
+# rows=int(input("enter rows:"))
+# cols=int(input("enter cols:"))
+# print("enter matrix A:")
+# for i in range(rows):
+#     row=[]
+#     for j in range(cols):
+#         row.append(int(input()))
+#     a.append(row)  
+
+# print("enter matrix B:")
+# for i in range(rows):
+#     for j in range(cols):
+#         row.append(int(input()))
+#     b.append(row) 
+
+# c=[]
+# for i in range(rows):
+#     row=[]
+#     for j in range(cols):
+#         row.append(a[i][j]-b[i][j])
+#     c.append(row)
+# print(c)    
+
+
+a=[1,2],[4,5]
+b=[3,4],[8,7]
+c=[0,0],[0,0]
+rows=2
+cols=2
+total=0
 for i in range(rows):
-    row=[]
     for j in range(cols):
-        row.append(int(input()))
-    a.append(row)    
-print(a)
-print("enetr matrix B: ")
-for i in range(rows):
-    row=[]
-    for j in range(cols):
-        row.append(int(input()))
-    b.append(row)
-print(b)
-c=[]
-for i in range(rows):
-    row=[]
-    for j in range(cols):
-        row.append(a[i][j]+b[i][j])
-    c.append(row)
-print("Result: ")
+        c[i][j]=a[i][j]+b[i][j]
+        total+=c[i][j]
+print("matix:")
 for row in c:
     print(row)        
-
-
-#subtraction
-a=[]
-b=[]
-rows=int(input("enter rows:"))
-cols=int(input("enter cols:"))
-print("enter matrix A:")
-for i in range(rows):
-    row=[]
-    for j in range(cols):
-        row.append(int(input()))
-    a.append(row)  
-
-print("enter matrix B:")
-for i in range(rows):
-    for j in range(cols):
-        row.append(int(input()))
-    b.append(row) 
-
-c=[]
-for i in range(rows):
-    row=[]
-    for j in range(cols):
-        row.append(a[i][j]-b[i][j])
-    c.append(row)
-print(c)    
-
-
+print(total)        
 
 
 
