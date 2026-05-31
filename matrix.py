@@ -134,5 +134,16 @@ for row in c:
 print(total)        
 
 
+a=[[1,2,3],[2,3,4]]
+b=[[4,5,6],[8,9,6]]
+c=[[0,0,0],[0,0,0]]
+rows=2
+cols=3
+for i in range(rows):
+    for j in range(cols):
+        c[i][j]=a[i][j]
+for row in c:        
+    print(row)
+
 
 
