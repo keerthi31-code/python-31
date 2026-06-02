@@ -64,5 +64,6 @@ up=(r-1,c)=0,1=1
 down=(r+1,c)=2,1=0
 left=(r,c-1)=1,0=1
 ryt=(r,c+1)=1,2=0
-
+dfs will visit those have a value
+0 it wont take
 '''

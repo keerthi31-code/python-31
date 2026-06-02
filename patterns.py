@@ -21,7 +21,7 @@
 #   print("# ",end="")
 #  print()
 
-#  for i in range(4):
+# for i in range(4):
 #    for j in range(i+1):
 #     print("#",end="")
 #    print() 
@@ -140,15 +140,15 @@
 #             print(" ", end="")
 #     print()
 
-lst=list(map(int,input().split(",")))
-dic={}
-for i in lst:
-    if i in dic:
-        dic[i] +=1
-    else:
-        dic[i]=1
+# lst=list(map(int,input().split(",")))
+# dic={}
+# for i in lst:
+#     if i in dic:
+#         dic[i] +=1
+#     else:
+#         dic[i]=1
 
-for key in dic:
-    if dic[key]==1:
-        print(key,end=" ")
+# for key in dic:
+#     if dic[key]==1:
+#         print(key,end=" ")
 
