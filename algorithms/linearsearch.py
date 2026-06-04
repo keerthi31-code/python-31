@@ -58,3 +58,11 @@ if found:
     print("yes")
 else:
     print("no")             
+
+# first occurance
+arr=[2,5,3,5,7]
+num=int(input("Target:"))
+for i in range(len(arr)):
+    if arr[i]==num:
+        print(i)
+        break
