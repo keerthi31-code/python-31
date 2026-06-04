@@ -73,12 +73,12 @@
 #     print(i)
 
 #6
-# numbers =[2, 3, 5, -6, -10, 45, -9]
+numbers =[2, 3, 5, -6, -10, 45, -9]
 
-# for num in numbers:
-#     if num < 0:
-#      continue 
-#     print(num)
+for num in numbers:
+    if num < 0:
+     continue 
+    print(num)
 
 #7
 # x= "keerthi is good girl" 
