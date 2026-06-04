@@ -66,3 +66,12 @@ for i in range(len(arr)):
     if arr[i]==num:
         print(i)
         break
+
+arr=[2,5,3,5,7]
+num=int(input("target: "))
+for i in range(len(arr)-1, -1, -1):
+    if arr[i]==num:
+        print(i)
+        break
+
+
