@@ -616,3 +616,13 @@ class B(A):
 
 b = B()
 b.show()
+
+arr=[1,2,5,6,7,4.6] 
+t=int(input("target:"))
+for i in range(len(arr)-1):
+    if i in arr:
+        t==i
+    print("yes")
+    break 
+else:
+    print("no")          
