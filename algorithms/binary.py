@@ -44,4 +44,18 @@ while l<=r:
         r=m-1
 print(ans)                     
 
+def find_target(arr,Target):
+    left=0
+    right=len(arr)-1
+    while left<=right:
+        m=(left+right)//2
+        if arr[m]==Target:
+            return m
+        elif arr[m]<Target:
+            left=m+1
+        else:
+            right=m-1
+    return -1        
+result=find_target([1,2,3,4,5,5],4)
+print(result)
 
