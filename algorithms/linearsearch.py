@@ -25,7 +25,7 @@
 #         count+=1
 # print(count) 
 
-'''
+
 arr=[4,7,2,9,1]
 num=0 #num = 0
 for i in arr: #i=4,7,2,9,1
@@ -73,11 +73,4 @@ for i in range(len(arr)-1, -1, -1): #start step count
     if arr[i]==num:
         print(i)
         break
-'''
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n):#6
-        for j in range(0, n-i-1):#6-1-1=4
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
-    return arr
+
