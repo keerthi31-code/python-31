@@ -33,3 +33,17 @@ def sort_des(arr):
 arr=[7,2,9,1]
 result=sort_des(arr)
 print(result) 
+
+
+def sort_count(arr):
+    n=len(arr)
+    count=0
+    for i in range(n):
+        for j in range(0,n-i-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+                count+=1
+    return count
+arr=[4,3,2,1] 
+result=sort_count(arr)
+print(result)           
