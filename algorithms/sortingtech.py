@@ -49,10 +49,21 @@ result=sort_count(arr)
 print(result)   
 
 def sorted_array(arr):
-    n=len(arr)
+    n=len(arr) 
     for i in range(n-1):
             if arr[i]>arr[i+1]:
                 return "not sorted"
     return "sorted"
 arr=list(map(int,input().split()))
 print(sorted_array(arr))    
+
+def largest_ele(arr):
+    n=len(arr)
+    for j in range(n-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+
+    return arr[-1]
+arr=[5,1,8,3]
+print(largest_ele(arr))
+
