@@ -67,3 +67,11 @@ def largest_ele(arr):
 arr=[5,1,8,3]
 print(largest_ele(arr))
 
+def bignum(arr):
+    n=len(arr)
+    for j in range(n-1):
+        if arr[j]>arr[j+1]:
+            arr[j],arr[j+1]=arr[j+1],arr[j]
+    return arr[-1]
+arr=[4,1,7,3]
+print(bignum(arr))        
