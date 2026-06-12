@@ -637,4 +637,19 @@ def bignum(arr):
             arr[j],arr[j+1]=arr[j+1],arr[j]
     return arr[-1]
 arr=[4,1,7,3]
-print(bignum(arr))        
+print(bignum(arr))  
+
+t = int(input())
+
+for _ in range(t):
+    n, k = map(int, input().split())
+    arr = list(map(int, input().split()))
+
+    window_sum = sum(arr[:k])
+    min_sum = window_sum
+
+    for i in range(k, n):
+        window_sum += arr[i] - arr[i - k]
+        min_sum = min(min_sum, window_sum)
+
+    print(min_sum)
