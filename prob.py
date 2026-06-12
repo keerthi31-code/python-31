@@ -626,3 +626,15 @@ for i in range(len(arr)-1):
     break 
 else:
     print("no")          
+
+
+
+
+def bignum(arr):
+    n=len(arr)
+    for j in range(n-1):
+        if arr[j]>arr[j+1]:
+            arr[j],arr[j+1]=arr[j+1],arr[j]
+    return arr[-1]
+arr=[4,1,7,3]
+print(bignum(arr))        
