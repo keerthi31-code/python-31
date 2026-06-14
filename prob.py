@@ -639,34 +639,3 @@ def bignum(arr):
 arr=[4,1,7,3]
 print(bignum(arr))  
 
-t = int(input())
-
-for _ in range(t):
-    n, k = map(int, input().split())
-    arr = list(map(int, input().split()))
-
-    window_sum = sum(arr[:k])
-    min_sum = window_sum
-
-    for i in range(k, n):
-        window_sum += arr[i] - arr[i - k]
-        min_sum = min(min_sum, window_sum)
-
-    print(min_sum)
-
-class Solution:
-    def countPrimes(self, n: int) -> int:
-        count = 0
-
-        for i in range(2, n):
-            prime = True
-
-            for j in range(2, int(i ** 0.5) + 1):
-                if i % j == 0:
-                    prime = False
-                    break
-
-            if prime:
-                count += 1
-
-        return count
