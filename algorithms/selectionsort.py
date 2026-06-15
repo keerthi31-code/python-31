@@ -46,8 +46,16 @@ def swaps(arr):
     return count
 print(swaps([3,2,1]))
 
-def k_sort(arr):
+def k_sort(arr, k):
     n=len(arr)
-    for i in range(n):
+    for i in range(k):
         min_index=i
+        for j in range(i+1, n):
+            if arr[j]<arr[min_index]:
+                min_index=j
+        arr[i], arr[min_index]=arr[min_index],arr[i]
+    return arr
+arr=[7,4,9,1,5]
+k=2
+print(k_sort(arr,k))            
         
