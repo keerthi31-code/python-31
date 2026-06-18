@@ -68,3 +68,22 @@ def insert_sort(arr):
         print(f"pass{i}:{arr}")
     return arr
 insert_sort([9,1,5,3,2])        
+
+def count_passes(arr):
+    n = len(arr)
+    passes = 0
+
+    for i in range(1, n):
+        key = arr[i]
+        j = i - 1
+
+        while j >= 0 and arr[j] > key:
+            arr[j + 1] = arr[j]
+            j -= 1
+
+        arr[j + 1] = key
+        passes += 1
+
+    return passes
+
+print(count_passes([9, 1, 5, 3, 2]))
