@@ -148,7 +148,7 @@ def count_shifts(arr):
         j=i-1
         while j>=0 and arr[j]>key:
             arr[j+1]=arr[j]
-            shifts+=1
+            shifts+=1 # inside while loop it count shifts outside count passes
             j-=1
         arr[j+1]=key
         
