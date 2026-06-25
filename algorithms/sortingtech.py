@@ -75,3 +75,24 @@ def bignum(arr):
     return arr[-1]
 arr=[4,1,7,3]
 print(bignum(arr))        
+
+
+
+def sort_quick(arr):
+    n=len(arr)
+    if n<=1:
+        return arr
+    pivot=arr[n//2]
+    left =[]
+    middle=[]
+    right=[]
+    for x in arr:
+        if x<pivot:
+            left.append(x)
+        elif x>pivot:
+            right.append(x)
+        else:
+            middle.append(x)
+    return sort_quick(left)+middle+sort_quick(right)
+arr=[6,4,3,7,5,2,1]
+print(sort_quick(arr))

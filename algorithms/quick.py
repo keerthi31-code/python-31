@@ -53,3 +53,4 @@ def sort_quick(arr):
 arr=[6,4,3,7,5,2,1]
 print(quick_sort(arr))
 
+
