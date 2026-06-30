@@ -113,4 +113,35 @@ def merge(left, right):
     new.extend(right[j:])
     return new
 arr=[3,5,2,4,9,8] 
-print(merge_sort(arr))           
+print(merge_sort(arr)) 
+
+
+count=0
+def merge_sort(arr):
+    if len(arr)<=1:
+        return arr
+    
+    mid=len(arr)//2
+    left_arr=arr[:mid]
+    right_arr=arr[mid:]
+    left_arr=merge_sort(left_arr)
+    right_arr=merge_sort(right_arr)
+    return merge(left_arr, right_arr)
+def merge(l,r):
+    global count
+    count+=1
+    array=[]
+    i,j=0,0
+    while i<len(l) and j<len(r):
+        if l[i]<r[j]:
+            array.append(l[i])
+            i+=1
+        else:
+            array.append(r[j])
+            j+=1
+    array.extend(l[i:])
+    array.extend(r[j:])
+    return array
+arr=[4,7,3,6,8,5] 
+print(merge_sort(arr)) 
+print("count:",count)      
