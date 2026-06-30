@@ -61,13 +61,10 @@ def mergeSort(arr):
     return arr
 arr=[4,6,2,3,1,8,9]
 print(mergeSort(arr))
-
 count = 0
-
 def merge(left, right):
     result = []
     i = j = 0
-
     while i < len(left) and j < len(right):
         if left[i] < right[j]:
             result.append(left[i])
@@ -75,30 +72,45 @@ def merge(left, right):
         else:
             result.append(right[j])
             j += 1
-
     result.extend(left[i:])
     result.extend(right[j:])
     return result
+def merge_sort(arr):
+    global count
+    if len(arr) <= 1:
+        return arr
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+    count += 1          # Count every merge
+    return merge(left, right)
+arr = [38, 27, 43, 3]
+sorted_arr = merge_sort(arr)
+print("Sorted Array:", sorted_arr)
+print("Merge Operations:", count)
 
 
 def merge_sort(arr):
-    global count
-
-    if len(arr) <= 1:
+    if len(arr)<=1:
         return arr
-
-    mid = len(arr) // 2
-
-    left = merge_sort(arr[:mid])
-    right = merge_sort(arr[mid:])
-
-    count += 1          # Count every merge
-    return merge(left, right)
-
-
-arr = [38, 27, 43, 3]
-
-sorted_arr = merge_sort(arr)
-
-print("Sorted Array:", sorted_arr)
-print("Merge Operations:", count)
+    mid=len(arr)//2
+    l_half=arr[:mid]
+    r_half=arr[mid:]
+    l_half=merge_sort(l_half)
+    r_half=merge_sort(r_half)
+    return merge(l_half, r_half)
+def merge(left, right):
+    new=[]
+    i,j=0,0
+    while i<len(left) and j<len(right):
+        if left[i]<right[j]:
+            new.append(left[i])
+            i+=1
+        else:
+            new.append(right[j])
+            j+=1
+    new.extend(left[i:])
+    new.extend(right[j:])
+    return new
+arr=[3,5,2,4,9,8] 
+print(merge_sort(arr))           
