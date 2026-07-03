@@ -214,3 +214,29 @@ k=2
 sorted_arr=merge_sort(arr)
 print(merge_sort)
 print(f"{k}nd smallest element:", sorted_arr[k - 1])
+
+# decending order
+def merge_sort(arr):
+    if len(arr)<=1:
+        return arr
+    mid=len(arr)//2
+    l_half=arr[:mid]
+    r_half=arr[mid:]
+    l_half=merge_sort(l_half)
+    r_half=merge_sort(r_half)
+    return merge(l_half, r_half)
+def merge(left,right):
+    dec_arr=[]
+    i,j=0,0
+    while i <len(left) and j <len(right):
+        if left[i]>=right[j]:
+            dec_arr.append(left[i])
+            i+=1
+        else:
+            dec_arr.append(right[j])
+            j+=1
+    dec_arr.extend(left[i:])
+    dec_arr.extend(right[j:])
+    return dec_arr
+arr=[3,4,1,6,2,7]
+print(merge_sort(arr))    
