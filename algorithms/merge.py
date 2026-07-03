@@ -239,4 +239,37 @@ def merge(left,right):
     dec_arr.extend(right[j:])
     return dec_arr
 arr=[3,4,1,6,2,7]
-print(merge_sort(arr))    
+print(merge_sort(arr)) 
+
+def remove_duplicates(arr):
+    if len(arr)<=1:
+        return arr
+    mid=len(arr)//2
+    l_half=remove_duplicates(arr[:mid])
+    r_half=remove_duplicates(arr[mid:])
+    return merge(l_half,r_half)
+def merge(left,right):
+    result=[]
+    i,j=0,0
+    while i<len(left) and j<len(right):
+        if left[i]==right[j]:
+            result.append(left[i])
+            i+=1
+            j+=1
+        elif left[i]<right[j]:
+            result.append(left[i]) 
+            i+=1
+        else:
+            result.append(right[j])
+            j+=1    
+    result.extend(left[i:])
+    result.extend(right[j:])
+    # remove adjacent duplicates
+    ans=[]
+    for x in result:
+        if not ans or ans[-1]!=x:
+            ans.append(x)
+    return ans
+arr=[2,4,3,5,2,5]
+print(remove_duplicates(arr))
+
