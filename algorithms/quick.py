@@ -78,7 +78,7 @@ def quick_sort(arr, low, high):
     return swaps
 arr = [6, 4, 3, 7, 5, 2, 1]
 total_swaps = quick_sort(arr, 0, len(arr) - 1)
-print("Sorted Array:", arr)
-print("Total Swaps:", total_swaps)
+print(arr)
+print(total_swaps)
 
 
