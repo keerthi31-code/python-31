@@ -15,9 +15,9 @@ print(counting_sort(arr))
 def counting_sort(arr): # arr = [4,2,2,8,3,3,1] 
     maximum=max(arr) #  8
     count=[0] * (maximum+1) #[0 0 0 0 0 0 0 0]
+    # count frequency
     for num in arr:
         count[num]+=1
-    freq=[0]
     j=0
     for i in range(len(count)):
         while count[i]>0:
@@ -44,3 +44,5 @@ def counting_sort(arr): # arr = [4,2,2,8,3,3,1]
     return output
 a=[4, 2, 8, 3, 3, 1]
 print(counting_sort(a))
+
+

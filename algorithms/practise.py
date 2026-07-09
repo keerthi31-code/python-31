@@ -95,3 +95,19 @@ def merge_sort(arr):
     return merge(left,right)
 arr=[4,5,3,2,5,4]
 print(merge_sort(arr))
+
+# counting sort practise
+def count_sort(arr):
+    maximum=max(arr)
+    count=[0] * (maximum+1)
+    for num in arr:
+        count[num]+=1
+    j=0
+    for i in range(len(count)):
+        while count[i]>0:
+            arr[j]=i
+            j+=1
+            count[i]-=1
+    return arr
+arr=[5,2,4,2,1]
+print(count_sort(arr))
