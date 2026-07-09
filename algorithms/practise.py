@@ -111,3 +111,15 @@ def count_sort(arr):
     return arr
 arr=[5,2,4,2,1]
 print(count_sort(arr))
+
+def freq(arr):
+    maximum=max(arr)
+    count=[0] * (maximum + 1)
+    for num in arr:
+        count[num]+=1
+    for i in range(len(count)):
+        if count[i]>0:
+            print(i, "-->",count[i])
+
+arr=[3,1,2,1,3,2,3]
+(freq(arr))
