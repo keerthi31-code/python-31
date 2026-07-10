@@ -164,6 +164,14 @@ arr1=[1,3,5]
 arr2=[2,4,6] 
 print(merge_s(arr1,arr2))  
 
+
+def merge_sort(arr):
+    if len(arr)<=1:
+        return arr
+    mid=len(arr)//2
+    left=merge_sort(arr[:mid])
+    right=merge_sort(arr[mid:])
+    return merge(left,right)
 def mergeSort(left, right):
     result=[]
     i,j=0,0
@@ -177,13 +185,6 @@ def mergeSort(left, right):
     result.extend(left[i:])
     result.extend(right[j:])
     return result
-def merge_sort(arr):
-    if len(arr)<=1:
-        return arr
-    mid=len(arr)//2
-    left=merge_sort(arr[:mid])
-    right=merge_sort(arr[mid:])
-    return merge(left,right)
 arr=[4,5,3,2,5,4]
 print(merge_sort(arr))
 

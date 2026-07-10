@@ -123,3 +123,18 @@ def freq(arr):
 
 arr=[3,1,2,1,3,2,3]
 (freq(arr))
+
+
+def count_array(arr):
+    maximum=max(arr)
+    count=[0] * (maximum + 1)
+    for num in arr:
+        count[num]+=1
+    j=0
+    for i in range(len(count)):
+        if count [i]>0:
+            j+=1
+    return count
+            
+arr=[4,1,2,1,4,3]
+print(count_array(arr))
