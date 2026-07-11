@@ -138,3 +138,4 @@ def count_array(arr):
             
 arr=[4,1,2,1,4,3]
 print(count_array(arr))
+print("keerthi")
