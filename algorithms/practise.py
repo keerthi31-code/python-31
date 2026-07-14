@@ -140,17 +140,13 @@ arr=[4,1,2,1,4,3]
 print(count_array(arr))
 
 
-def recon(arr):
-    j=0
+def recon(count):
+    ans=[]
     for i in range(len(count)):
-        if count[i]>0:
-            j+=1
-    maximum=max(arr)
-    count=[0]*(maximum+1)
-    for num in arr:
-        count[num]+=1
-    return arr
-arr=[0,1,2,0,3]
-print(recon(arr))
+        while count[i]>0:
+            ans.append(i)
+            count[i]-=1
+    return ans
+count=[0,1,2,0,3]
+print(recon(count))
 
-print("keerthi")
