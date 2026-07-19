@@ -68,8 +68,19 @@ def rev_arr(arr):
         arr[l],arr[r]=arr[r],arr[l]
         l+=1
         r-=1
-
-
     return arr
 arr=[10,20,30,40,50]
 print(rev_arr(arr))
+
+
+s='momi'
+left=0
+right=len(s)-1
+while left<right:
+    if s[left]!=s[right]:
+        print(False)
+        break
+    else:
+        left+=1
+        right-=1
+    print(True)
