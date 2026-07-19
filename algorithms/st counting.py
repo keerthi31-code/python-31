@@ -60,3 +60,5 @@ def counting_sort(arr):
 arr = [8,4,3,5,5,8,2,1]
 print(counting_sort(arr))
 
+
+
