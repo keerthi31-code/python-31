@@ -84,3 +84,21 @@ while left<right:
         left+=1
         right-=1
     print(True)
+
+def two_sum(arr, target):
+    current_sum=0
+    l=0
+    right=len(arr)-1
+    while l<right:
+        current_sum=arr[l]+arr[right]
+
+        if current_sum==target:
+            return [l,right]
+        elif current_sum>target:
+            right-=1
+        else:
+            l+1
+    return []
+arr=[2,4,6,8,10]
+target=6
+print(two_sum(arr,target))
