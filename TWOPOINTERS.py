@@ -1,3 +1,4 @@
+
 '''
 Two pointers technique uses 2 indices to solve problems on arrays or strings 
 instead of nested loops O(n^2) , it solves problems in O(n)
@@ -60,7 +61,6 @@ Container With Most Water (LeetCode 11).
 Trapping Rain Water (LeetCode 42).
 '''
 
-
 def rev_arr(arr):
     l=0
     r=len(arr)-1
@@ -112,3 +112,28 @@ def move_zeroes(arr):
     return arr
 arr=[1,0,3,0,5,6]
 print(move_zeroes(arr))
+
+def remove_duplicates(arr):
+    res=[]
+    left=0
+    right=len(arr)-1
+    while left<right:
+        s=arr[left],arr[right]
+    if arr[left]!=arr[right]:
+        res.append(s)
+    else:
+        left+=1
+        right-=1
+arr=[1,2,1,4,5,6,6,7,8]
+print(remove_duplicates(arr))
+
+
+
+def prime_num(n):
+    for i in n:
+        if i%2==0:
+            return False
+        else:
+            return n
+print(prime_num(30))
+        
