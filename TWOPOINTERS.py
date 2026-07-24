@@ -151,6 +151,7 @@ arr1=[1,3,5]
 arr2=[2,4,6]
 print(merge_arrs(arr1,arr2))
 print("keerthi")
+print("navya")
 
 
 
