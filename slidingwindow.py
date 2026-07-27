@@ -14,3 +14,15 @@ def sliding_window(nums, k):
 k=3
 nums=[2,1,5,1,3,2]
 print(sliding_window(nums,k))
+
+
+s='abababd'
+p='ab'
+k=len(p)
+count=0
+for ch in range(len(s)-k+1):
+    if s[ch:ch+k]==p:
+        count+=1
+print(count)
+
+
