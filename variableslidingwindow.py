@@ -1,7 +1,5 @@
 ##Variable sliding window ---------
 # nums = [2,3,1,2,4,3]
-
-
 def longest_subarr(nums, k):
 
     left =0
@@ -25,9 +23,6 @@ def longest_subarr(nums, k):
                 en = right
 
     return nums[st:en+1], max_len
-                
-    
-
 arr = [2,3,1,2,4,3]
 n=7
 print(longest_subarr(arr,n))

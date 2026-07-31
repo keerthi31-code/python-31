@@ -26,3 +26,22 @@ for ch in range(len(s)-k+1):
 print(count)
 
 
+
+from collections import deque
+def slide_window_max(nums,k):
+    dq=deque()
+    result=[]
+    n=len(nums)
+    for i in range(n):
+        while dq and dq[0]<=i:
+            dq.popleft()
+        while dq and nums[dq[-1]] < nums[i]:
+            dq.pop
+        dq.append(i)
+
+        if i>=k-1:
+            result.append(nums[dq[0]])
+    return result
+nums=list(map(int, input().split()))
+k=int(input())
+print(slide_window_max(nums,k))
