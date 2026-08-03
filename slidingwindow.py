@@ -45,5 +45,3 @@ def slide_window_max(nums,k):
 nums=list(map(int, input().split()))
 k=int(input())
 print(slide_window_max(nums,k))
-
-print("keerthi")

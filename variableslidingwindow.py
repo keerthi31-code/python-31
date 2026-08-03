@@ -26,3 +26,9 @@ def longest_subarr(nums, k):
 arr = [2,3,1,2,4,3]
 n=7
 print(longest_subarr(arr,n))
+
+print("keerthi")
+print("navya")
+print("manasa")
+print("sriya")
+print("aashritha")
