@@ -9,3 +9,9 @@ heapq.heappush(a,7)
 heapq.heappush(a,9)
 print(a)
 print(a[0])
+#parent <= child nodes
+
+import heapq
+num =[10,5,20,2,8]
+heapq.heapify(num)
+print(num)
