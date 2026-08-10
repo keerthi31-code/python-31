@@ -15,3 +15,10 @@ import heapq
 num =[10,5,20,2,8]
 heapq.heapify(num)
 print(num)
+
+# min heap
+import heapq
+num=[10,5,20,2,8]
+heapq.heapify(num)
+while num:
+    print(heapq.heappop(num),end=" ")
