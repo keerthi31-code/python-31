@@ -22,3 +22,25 @@ num=[10,5,20,2,8]
 heapq.heapify(num)
 while num:
     print(heapq.heappop(num),end=" ")
+
+#max heap
+import heapq
+heap=[]
+num=[10,5,20,2,8]
+for i in num:
+    heapq.heappush(heap,-i) #insert negative values
+print(heap)
+while heap: #continue as long as heap is not empty
+    print(-heapq.heappop(heap),end=" ") # removes the smallest value from the heap
+
+# 3largst elements
+import heapq
+num=[10,5,3,5,4]
+res=heapq.nlargest(3,num)
+print(res)
+
+import heapq
+num=[10,5,3,5,4]
+res=heapq.nsmallest(3,num)
+for i in res:
+    print(i)
