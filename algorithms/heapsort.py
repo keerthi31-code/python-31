@@ -44,3 +44,26 @@ num=[10,5,3,5,4]
 res=heapq.nsmallest(3,num)
 for i in res:
     print(i)
+
+
+#practice questions
+arr=[10,5,20,2,8]
+heapq.heapify(arr)
+while arr:
+    print(heapq.heappop(arr))
+
+arr=[15, 3, 20, 8, 10]
+heap=[]
+for i in arr:
+    heapq.heappush(heap, -i)
+print(arr)
+while heap:
+    print(-heapq.heappop(heap))
+
+arr=[4,10,2,30,8]
+res=heapq.nlargest(1,arr)
+print(res)
+
+arr=[4,10,2,30,8]
+res=heapq.nsmallest(1,arr)
+print(res)
