@@ -67,3 +67,15 @@ print(res)
 arr=[4,10,2,30,8]
 res=heapq.nsmallest(1,arr)
 print(res)
+
+#kth samllest
+num=list(map(int,input().split()))
+k =int(input())
+
+heapq.heapify(num)
+for i in range (k):
+    res=heapq.heappop(num)
+
+print("kth ele:",res)
+
+print('keerthi')
