@@ -78,5 +78,3 @@ for i in range (k):
 
 print("kth ele:",res)
 
-print('keerthi')
-print('navya')
