@@ -18,6 +18,16 @@ def preorder(root):
     print(root.data, end=" ")
     preorder(root.left)
     preorder(root.right)
+
+def postorder(root):
+    if root is None:
+        return
+    postorder(root.left)
+    postorder(root.right)
+    print(root.data,end=" ")
+
+
+
 root = Node(10)
 
 root.left = Node(20)
@@ -31,3 +41,5 @@ root.right.right = Node(70)
 inorder (root)
 print()
 preorder(root)
+print()
+postorder(root)
