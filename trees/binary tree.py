@@ -11,6 +11,13 @@ def inorder(root):
     inorder(root.left)
     print(root.data, end=" ")
     inorder(root.right)
+
+def preorder(root):
+    if root is None:
+        return
+    print(root.data, end=" ")
+    preorder(root.left)
+    preorder(root.right)
 root = Node(10)
 
 root.left = Node(20)
@@ -22,3 +29,5 @@ root.left.right = Node(50)
 root.right.left = Node(60)
 root.right.right = Node(70)
 inorder (root)
+print()
+preorder(root)
