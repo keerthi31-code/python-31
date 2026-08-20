@@ -62,12 +62,15 @@ root.right.right=Node(70)
 def level_order(root):
     if root is None:
         return
-    queue=deque([root])
+    queue=deque([root]) #[10]
     while queue:
-        node=queue.popleft()
+        node=queue.popleft() #remove the first node
         print(node.data,end=" ")
         if node.left:
-            queue.append(node.right)
+        #add its children
+            queue.append(node.left)
         if node.right:
             queue.append(node.right)
 level_order(root)
+
+
