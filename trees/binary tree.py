@@ -72,5 +72,6 @@ def level_order(root):
         if node.right:
             queue.append(node.right)
 level_order(root)
+print()
 
 
