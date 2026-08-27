@@ -13,5 +13,4 @@ for j in range(t):
 print("adjacency list:")
 for k in graph:
     print(k,":",graph[k])
-
-print('keerthi')
+print("keerthi")
