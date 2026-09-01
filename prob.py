@@ -638,9 +638,3 @@ def bignum(arr):
     return arr[-1]
 arr=[4,1,7,3]
 print(bignum(arr))  
-print("keerrhi")
-print("m.Kitty")
-print("navya")
-print("manasa")
-print("aashritha")
-print("sriya")
