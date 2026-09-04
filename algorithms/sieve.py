@@ -14,3 +14,4 @@ def sieve(n): #10
     return res
 n= int(input())#10
 print(sieve(n))
+print("keerthi")
