@@ -15,3 +15,4 @@ def sieve(n): #10
 n= int(input())#10
 print(sieve(n))
 print("keerthi")
+print('navya')
