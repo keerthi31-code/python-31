@@ -29,3 +29,16 @@ n=int(input("enter the num: "))
 index=lst.index(s)
 new_index=(index+n) % 7
 print(lst[new_index])
+
+
+def fib(n,memo={}):#6,m-5,4
+    if n<=1:
+        return n
+    if n in memo:
+        return memo[n]
+
+    memo[n] = fib(n-1, memo)+fib(n-2,memo)#{6:
+
+    return memo[n]
+
+print(fib(6))
