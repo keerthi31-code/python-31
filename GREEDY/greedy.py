@@ -14,3 +14,18 @@ for money in people:
         break
 
 print(count)
+
+
+##ls = [sun, mon, tue, wed, thur, fri, sat]
+#mon, 2
+#output= wed
+
+#frid, 2000
+#output: tue
+
+lst=['sun', 'mon', 'tues', 'wed', 'thurs', 'fri', 'sat']
+s=input("enter the day: ")
+n=int(input("enter the num: "))
+index=lst.index(s)
+new_index=(index+n) % 7
+print(lst[new_index])
