@@ -43,6 +43,6 @@ def fib(n,memo={}):#6,m-5,4
 
 print(fib(6))
 print(fib(9))
-print(fib(56))
+print(fib(5))
 print(fib(4))
-print("keerthi")
+print(fib(8))
