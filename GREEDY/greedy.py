@@ -41,8 +41,4 @@ def fib(n,memo={}):#6,m-5,4
 
     return memo[n]
 
-print(fib(6))
-print(fib(9))
-print(fib(5))
-print(fib(4))
-print(fib(8))
+print(10)
