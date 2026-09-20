@@ -42,3 +42,4 @@ def fib(n,memo={}):#6,m-5,4
     return memo[n]
 
 print(10)
+print(12)
