@@ -40,6 +40,4 @@ def fib(n,memo={}):#6,m-5,4
     memo[n] = fib(n-1, memo)+fib(n-2,memo)#{6:
 
     return memo[n]
-
-print(10)
-print(12)
+print(2)
