@@ -32,3 +32,4 @@ capacity = 5
 
 print(knapsack(weights, values, capacity))
 print("keerthi")
+print('choti')
