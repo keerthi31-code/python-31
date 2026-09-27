@@ -31,6 +31,4 @@ values = [10, 15, 40]
 capacity = 5
 
 print(knapsack(weights, values, capacity))
-print("keerthi")
-print('choti')
-print('choti')
+
