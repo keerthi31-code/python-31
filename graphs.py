@@ -13,3 +13,29 @@ for j in range(t):
 print("adjacency list:")
 for k in graph:
     print(k,":",graph[k])
+
+
+# BFS code pattern
+from collections import deque
+queue=deque([0]) # start from node 0
+visited={0} # already visited 0
+while queue:
+    node = queue.popleft() # taking the first node from the queue
+    for neighbour in graph[node]:
+        if neighbour not in visited: #if already seen this node before
+            visited.add(neighbour)
+            queue.append(neighbour)# visited node and add ti the queue
+
+#DFS code pattern
+visited = set()
+
+def dfs(node):
+
+    visited.add(node)
+
+    for neighbor in graph[node]:
+
+        if neighbor not in visited:
+
+            dfs(neighbor)
+
