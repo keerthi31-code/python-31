@@ -39,3 +39,24 @@ def dfs(node):
 
             dfs(neighbor)
 
+#Write a program that counts the frequency of each unique word 
+#inside a text sentence.
+
+
+
+
+sentence = input("Enter a sentence: ")#cat dog cat
+words = sentence.split()
+freq = {}
+for word in words:
+    if word in freq:
+        freq[word] += 1
+    else:
+        freq[word] = 1
+count=0
+for word in freq:
+    if freq[word]==1:
+        count+=1
+print("count:",count)
+
+
