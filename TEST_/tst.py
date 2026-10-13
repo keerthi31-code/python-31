@@ -11,5 +11,3 @@ for i in range(e):
     graph[b].append(a)
     
 print(graph)
-print('keerthi')
-print('choti')
