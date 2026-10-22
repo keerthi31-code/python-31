@@ -26,3 +26,4 @@ def subsets(n): #n=2
     generate([])
     return r
 print(subsets(2))
+print(subsets(3))
