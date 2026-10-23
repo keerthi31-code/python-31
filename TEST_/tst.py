@@ -27,3 +27,4 @@ def subsets(n): #n=2
     return r
 print(subsets(2))
 print(subsets(3))
+print(subsets(4))
