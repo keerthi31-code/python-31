@@ -96,9 +96,4 @@ a = [8,6,4,9,1,2]
 
 print(count_sort(a))
 print(count_sort(b)) 
-print('Happy Birthday to me!')
 print('keerthi')
-print(22)
-print('manasa')
-print('nani')
-
